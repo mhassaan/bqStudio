@@ -6,6 +6,20 @@ Rails.application.routes.draw do
 
   namespace :admin do
     root 'welcome#index'
+    resources :newsletter do
+      collection do
+        get 'new_images_to_newsletter/:id'=> 'newsletter#new_images_to_newsletter'
+        get 'show_images_of_newsletter/:id'=> 'newsletter#show_images_of_newsletter'
+        post 'add_images_to_newsletter'=> 'newsletter#add_images_to_newsletter'
+        get 'edit_images_of_newsletter/:id'=> 'newsletter#edit_images_of_newsletter'
+        post 'update_images_of_newsletter'=> 'newsletter#update_images_of_newsletter'
+        delete 'delete_images_of_newsletter/:id' => 'newsletter#delete_images_of_newsletter'
+
+        get 'new_articles_to_newsletter/:id'=> 'newsletter#new_articles_to_newsletter'
+        post 'add_articles_to_newsletter'=> 'newsletter#add_articles_to_newsletter'
+      end
+    end
+
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
