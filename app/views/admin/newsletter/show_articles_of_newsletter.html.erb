@@ -1,0 +1,53 @@
+<section id="content">
+  <section class="vbox">
+    <section class="scrollable padder">
+      <ul class="breadcrumb no-border no-radius b-b b-light pull-in">
+        <li><a href="index.html"><i class="fa fa-home"></i> Newsletter</a></li>
+        <li><a href="#">List</a></li>
+      </ul>
+      <ul>
+        <%= render 'partials/error_messages'%>
+      </ul>
+      <div class="m-b-md">
+        <h3 class="m-b-none">Newsletter Articles</h3>
+      </div>
+      <section class="panel panel-default">
+        <header class="panel-heading">
+          Articles
+           <a style="float:right;margin-top:-7px;" href="<%=admin_newsletter_index_path%>" class="btn btn-s-sm btn-default ">Back</a> 
+          <i class="fa fa-info-sign text-muted" data-toggle="tooltip" data-placement="bottom" data-title="ajax to load the data."></i> 
+        </header>
+        <div class="table-responsive">
+          <table id="newsletter_list" class="display table-striped table-bordered" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th>Article/Title</th>
+                    <th>Author</th>
+                    <th>Description</th>
+                    <th>Picture</th>
+                    <th>Actions</th>
+                </tr>
+            </thead> 
+            <tbody>
+              <% @articles.each do |f|%>
+                <tr>
+                    <td><%=f.title if f.title.present?%></td>
+                    <td><%=f.author%></td>
+                    <td><%=f.description%></td>
+                    <td><img src=<%=f.avatar.url(:thumb)%>></td>                      
+                    <td>
+                      <span >
+                        <a href="/admin/newsletter/edit_articles_of_newsletter/<%=f.id%>" ><i data-toggle="tooltip" data-placement="top" title = "Edit" class="fa fa-pencil icon-muted fa-fw m-r-xs"></i></a>
+                        <a href= "/admin/newsletter/delete_articles_of_newsletter/<%=f.id%>" data-method="delete"><i data-toggle="tooltip" data-placement="top" title = "Remove" class="fa fa-times icon-muted fa-fw"></i></a> 
+                      </span>
+                    </td>
+                </tr>
+              <%end%>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </section>
+  <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen" data-target="#nav"></a>
+</section>

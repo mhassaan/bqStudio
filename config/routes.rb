@@ -6,6 +6,16 @@ Rails.application.routes.draw do
 
   namespace :admin do
     root 'welcome#index'
+    resources :artist do 
+      collection do 
+        get 'new_work_to_artist/:id'=> 'artist#new_work_to_artist'
+        get 'show_work_of_artist/:id'=> 'artist#show_work_of_artist'
+        post 'add_work_to_artist'=> 'artist#add_work_to_artist'
+        get 'edit_work_of_artist/:id'=> 'artist#edit_work_of_artist'
+        post 'update_work_of_artist'=> 'artist#update_work_of_artist'
+        delete 'delete_work_of_artist/:id' => 'artist#delete_work_of_artist'
+      end
+    end
     resources :newsletter do
       collection do
         get 'new_images_to_newsletter/:id'=> 'newsletter#new_images_to_newsletter'
@@ -16,7 +26,12 @@ Rails.application.routes.draw do
         delete 'delete_images_of_newsletter/:id' => 'newsletter#delete_images_of_newsletter'
 
         get 'new_articles_to_newsletter/:id'=> 'newsletter#new_articles_to_newsletter'
+        get 'show_articles_of_newsletter/:id'=> 'newsletter#show_articles_of_newsletter'
         post 'add_articles_to_newsletter'=> 'newsletter#add_articles_to_newsletter'
+        get 'edit_articles_of_newsletter/:id'=> 'newsletter#edit_articles_of_newsletter'
+        #post 'update_article' =>'newsletter#update_article'
+        post 'update_articles_of_newsletter'=> 'newsletter#update_articles_of_newsletter'
+        delete 'delete_articles_of_newsletter/:id' => 'newsletter#delete_articles_of_newsletter'
       end
     end
 

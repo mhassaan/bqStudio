@@ -4,14 +4,16 @@
       <ul class="breadcrumb no-border no-radius b-b b-light pull-in">
       <li><a href="" ><i class="fa fa-home"></i> Newsletter</a></li>
       <li><a href="#">Add</a></li>
+    <!--   <li><a style="float:right;margin-top:5px;" href="#" class="btn btn-s-sm btn-info btn-rounded">Back</a> </li> -->
       </ul>
       <%= render 'partials/error_messages' %>
       <div class="m-b-md">
-        <h3 class="m-b-none">Add Article</h3>
+        <h3 class="m-b-none">Add Article</h3> 
       </div>
       <section class="panel panel-default">
         <header class="panel-heading font-bold">
-          Fresh Article
+          Fresh Article 
+          <a style="float:right;margin-top:-7px;" href="<%=admin_newsletter_index_path%>" class="btn btn-s-sm btn-default ">Back</a> 
         </header>
         <div class="panel-body">
           <%= form_for @data , url: '/admin/newsletter/add_articles_to_newsletter' , method: 'post', :html=>{class: 'form-horizontal',multipart: true} do |f|%>

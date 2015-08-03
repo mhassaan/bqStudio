@@ -117,6 +117,39 @@ class Admin::NewsletterController < ApplicationController
   	end
   end
 
+  def show_articles_of_newsletter
+    @data = Newsletter.find params[:id]
+    @articles = @data.articles
+  end
+
+  def edit_articles_of_newsletter
+    @data = Article.find params[:id]
+  end
+
+  def update_articles_of_newsletter
+    @data = Article.find params[:article_id]
+    @letter_id =  @data.newsletter.id
+    if @data.update_attributes(article_update_params)
+      flash[:success] = "Article updated successfully."
+      redirect_to '/admin/newsletter/show_articles_of_newsletter/'+@letter_id.to_s
+    else
+      flash[:danger] = @data.errors.full_messages.join('<br/>')
+      redirect_to '/admin/newsletter/edit_articles_of_newsletter/'+@data.id.to_s
+    end
+  end
+
+  def delete_articles_of_newsletter
+    @data = Article.find params[:id]
+    @letter_id =  @data.newsletter.id
+    if @data.destroy
+      flash[:danger] = "Article deleted successfully."
+      redirect_to '/admin/newsletter/show_articles_of_newsletter/'+@letter_id.to_s
+    else
+      flash[:danger] = @data.errors.full_messages.join('<br/>')
+      redirect_to '/admin/newsletter/show_articles_of_newsletter/'+@letter_id.to_s
+    end
+  end
+
   protected
     def newsletter_params
       params.require(:newsletter).permit(:title,:summary,:publisher_date,:cover_pic)
@@ -125,4 +158,8 @@ class Admin::NewsletterController < ApplicationController
     def avatar_update_params
     	params.require(:picture).permit(:avatar)
     end 
+
+    def article_update_params
+      params.require(:article).permit(:avatar,:author,:title,:description)
+    end
 end
