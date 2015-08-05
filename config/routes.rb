@@ -16,6 +16,26 @@ Rails.application.routes.draw do
         delete 'delete_work_of_artist/:id' => 'artist#delete_work_of_artist'
       end
     end
+    resources :workshop do 
+      collection do
+        get 'new_work_to_workshop/:id'=> 'workshop#new_work_to_workshop'
+        get 'show_work_of_workshop/:id'=> 'workshop#show_work_of_workshop'
+        post 'add_work_to_workshop'=> 'workshop#add_work_to_workshop'
+        get 'edit_work_of_workshop/:id'=> 'workshop#edit_work_of_workshop'
+        post 'update_work_of_workshop'=> 'workshop#update_work_of_workshop'
+        delete 'delete_work_of_workshop/:id' => 'workshop#delete_work_of_workshop'
+      end
+    end
+    resources :visit do
+      collection do
+        get 'new_work_to_visit/:id'=> 'visit#new_work_to_visit'
+        get 'show_work_of_visit/:id'=> 'visit#show_work_of_visit'
+        post 'add_work_to_visit'=> 'visit#add_work_to_visit'
+        get 'edit_work_of_visit/:id'=> 'visit#edit_work_of_visit'
+        post 'update_work_of_visit'=> 'visit#update_work_of_visit'
+        delete 'delete_work_of_visit/:id' => 'visit#delete_work_of_visit'
+      end
+    end
     resources :newsletter do
       collection do
         get 'new_images_to_newsletter/:id'=> 'newsletter#new_images_to_newsletter'

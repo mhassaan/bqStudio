@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150803183820) do
+ActiveRecord::Schema.define(version: 20150805010245) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -79,5 +79,29 @@ ActiveRecord::Schema.define(version: 20150803183820) do
   end
 
   add_index "pictures", ["imageable_id"], name: "index_pictures_on_imageable_id"
+
+  create_table "visits", force: :cascade do |t|
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.string   "name"
+    t.string   "desc"
+    t.string   "location"
+    t.string   "cover_pic_file_name"
+    t.string   "cover_pic_content_type"
+    t.integer  "cover_pic_file_size"
+    t.datetime "cover_pic_updated_at"
+  end
+
+  create_table "workshops", force: :cascade do |t|
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.string   "name"
+    t.string   "desc"
+    t.string   "location"
+    t.string   "cover_pic_file_name"
+    t.string   "cover_pic_content_type"
+    t.integer  "cover_pic_file_size"
+    t.datetime "cover_pic_updated_at"
+  end
 
 end

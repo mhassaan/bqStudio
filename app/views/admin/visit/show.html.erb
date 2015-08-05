@@ -1,0 +1,51 @@
+<section id="content">
+  <section class="vbox">
+    <section class="scrollable padder">
+      <ul class="breadcrumb no-border no-radius b-b b-light pull-in">
+      <li><a href="" ><i class="fa fa-home"></i> Visit</a></li>
+      <li><a href="#">View</a></li>
+      </ul>
+      <div class="m-b-md">
+        <h3 class="m-b-none">View Visit</h3>
+      </div>
+      <section class="panel panel-default">
+        <header class="panel-heading font-bold">
+         Visit Detail
+        </header>
+        <div class="panel-body">
+          <form class="form-horizontal">
+          
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Name/Title</label>
+              <div class="col-sm-8">
+                 <input type="text" value="<%=@data.name%>" class="form-control" disabled="">
+              </div>
+            </div>
+            <div class="line line-dashed line-lg pull-in"></div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Vist Details</label>
+              <div class="col-sm-8">
+                <%= text_area_tag 'summary', @data.desc, {class: 'form-control parsley-validated',disabled: true,rows: "6"}%>
+              </div>
+            </div>
+            <div class="line line-dashed line-lg pull-in"></div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Location</label>
+              <div class="col-sm-8">
+                <input type="text" value="<%=@data.location%>" class="form-control" disabled="">
+              </div>
+            </div>
+            <div class="line line-dashed line-lg pull-in"></div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Photo</label>
+              <div class="col-sm-4">
+                <%= image_tag @data.cover_pic.url(:medium) %>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </section>
+  </section>
+  <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen" data-target="#nav"></a>
+</section>
