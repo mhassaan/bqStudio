@@ -1,0 +1,80 @@
+<div id="wrapper-1">
+<!-- ========= HEADER ========= -->
+<%=render 'partials/front_header'%>
+<!-- ========= END ========= -->
+<!-- ========= CALLOUT BOX LIGHT ======== -->
+<section class="section-bar-1">
+    <div class="container">
+        <div class="callout-box-1">
+            <div class="box-text">
+                <h3>Portfolio Single</h3>
+            </div>
+            <div class="box-text-2">
+                <output>Visit/Portfolio</output>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section section-margin">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-sm-9 col-xs-12 subpage-left">
+                <a data-lightbox="single" href="<%=@data.cover_pic%>" >
+                    <div class="isotope-info">
+                        <img class="img-responsive" src="<%=@data.cover_pic.url(:medium)%>" alt=""/>
+                        <div class="hover-info"><div class="infobox-3"></div></div>
+                    </div>
+                </a>   
+            </div>
+            <div class="col-lg-3 col-sm-3 col-xs-12">
+                <div class="infobox-4">
+                    <div class="infobox-text-2">
+                        <h6>DESCRIPTION</h6>
+                        <p><%=@data.location%><br/>
+                            Date: <%=@data.created_at.strftime('%d-%m-%Y')%><br/>
+                        </p>
+                    </div>
+                    <div class="infobox-text-2">
+                        <h6>DETAILS</h6>
+                        <p><%=@data.desc%></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section section-bar-1">
+    <div class="container">
+         <div id="isotope-single" class="isotope thight margin">
+            <% @result.each do |f|%>
+                <div class="item col-4">
+                    <a data-lightbox="portfolio[group]" href="<%=f.avatar%>"> <!-- 600x400 is the size -->
+                        <div class="isotope-info">
+                            <img class="img-responsive" src='<%=f.avatar.url(:medium)%>' alt=""/>
+                            <div class="hover-info"><div class="infobox-3"></div></div>
+                     </div>
+                    </a>   
+                </div>
+            <%end%>
+        </div>
+    </div>
+</section>
+<!-- ========= END ========= -->
+<!-- ========= INFO ========= -->
+<section class="section section-margin">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-sm-8 col-xs-12">
+                <div class="infobox-2">
+                    <h4>Description</h4>
+                    <p><%=@data.desc%></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ============= END ============= -->
+<%=render 'partials/front_footer'%>
+<a class="scroll-top" href="#"><i class="fa fa-angle-up"></i></a>
+<!-- ========= END ========= -->
+</div>

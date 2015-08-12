@@ -1,0 +1,38 @@
+<div data-no-turbolink id="wrapper-1">
+            <!-- ========= HEADER ========= -->
+    <%=render 'partials/front_header'%>
+    <section class="section-bar-1">
+        <div class="container">
+            <div class="callout-box-1">
+                <div class="box-text">
+                    <h3>Newsletter Gallery</h3>
+                </div>
+                <div class="box-text-2">
+                    <output>Home/Newsletter</output>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="section section-margin">
+        <div class="container">
+            <div id="isotope-single" class="isotope thight margin">
+                <% @data.each do |news|%>
+                    <div class="item col-4">
+                        <a data-lightbox="portfolio[group]" href="<%=news.cover_pic%>">
+                            <div class="isotope-info">
+                                <img class="img-responsive" src="<%=news.cover_pic.url(:medium)%>" alt=""/>
+                                <div class="hover-info"><div class="infobox-3"></div></div>
+                                </div>
+                        </a>
+                        <h4><a href='<%=newsletter_path(news.id)%>'><%=news.title%></a></h4>
+                        <p><a href='<%=newsletter_path(news.id)%>'><%=truncate(news.summary)%></a></p> 
+                    </div>
+                <%end%>
+            </div>
+        </div>
+    </section>
+    <%=render 'partials/front_footer'%>
+    <a class="scroll-top" href="#"><i class="fa fa-angle-up"></i></a>
+            <!-- ========= END ========= -->
+</div>
+        

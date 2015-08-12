@@ -4133,7 +4133,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin: 20px 0;
   border-radius: 4px;
 }
-.pagination > li {
+/*.pagination > li {
   display: inline;
 }
 .pagination > li > a,
@@ -4219,7 +4219,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .pagination-sm > li:last-child > span {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-}
+}*/
 .pager {
   padding-left: 0;
   margin: 20px 0;

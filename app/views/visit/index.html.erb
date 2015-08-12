@@ -1,0 +1,44 @@
+<div data-no-turbolink id="wrapper-1">
+            <!-- ========= HEADER ========= -->
+    <%=render 'partials/front_header'%>
+    <section class="section-bar-1">
+        <div class="container">
+            <div class="callout-box-1">
+                <div class="box-text">
+                    <h3>Visit Work</h3>
+                </div>
+                <div class="box-text-2">
+                    <output>Home/Visit</output>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="section section-margin">
+        <div class="container">
+            <div id="isotope-single" class="isotope thight margin">
+                <% @data.each do |visit|%>
+                    <div class="item col-4">
+                        <a data-lightbox="portfolio[group]" href="<%=visit.cover_pic%>">
+                            <div class="isotope-info">
+                                <img class="img-responsive" src="<%=visit.cover_pic.url(:medium)%>" alt=""/>
+                                <div class="hover-info"><div class="infobox-3"></div></div>
+                         	</div>
+                        </a>
+                        <h4><a href='<%=visit_path(visit.id)%>'><%=visit.name%></a></h4>
+                        <p><a href='<%=visit_path(visit.id)%>'><%=visit.location%></a></p> 
+                    </div>
+                <%end%>
+            </div>            
+        </div>
+        <div class="container">
+             <div class="digg_pagination"><%= will_paginate @data%></div>
+        </div>
+    </section>
+   
+        
+   
+    <%=render 'partials/front_footer'%>
+    <a class="scroll-top" href="#"><i class="fa fa-angle-up"></i></a>
+            <!-- ========= END ========= -->
+</div>
+        

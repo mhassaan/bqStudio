@@ -4,6 +4,19 @@ Rails.application.routes.draw do
     get "admins/sign_out" => "devise/sessions#destroy"
   end
 
+  root 'home#index'
+  resources :visit do 
+  end
+  resources :artist do 
+  end
+  resources :workshop do 
+  end
+  resources :newsletter do 
+    collection do 
+      get 'article_detail/:id'=> 'newsletter#article_detail'
+    end
+  end
+
   namespace :admin do
     root 'welcome#index'
     resources :artist do 
