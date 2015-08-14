@@ -12,6 +12,7 @@
       <section class="panel panel-default">
         <header class="panel-heading font-bold">
           Visit Image
+          <a style="float:right;margin-top:-7px;" href="<%=admin_visit_index_path%>" class="btn btn-s-sm btn-default ">Back</a> 
         </header>
         <div class="panel-body">
           <%= form_for @data , url: '/admin/visit/add_work_to_visit' , method: 'post', :html=>{class: 'form-horizontal',multipart: true} do |f|%>

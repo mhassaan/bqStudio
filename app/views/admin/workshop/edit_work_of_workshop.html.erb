@@ -12,6 +12,7 @@
       <section class="panel panel-default">
         <header class="panel-heading font-bold">
           Edit Workshop Work
+           <a style="float:right;margin-top:-7px;" href="/admin/workshop/show_work_of_workshop/<%=@data.imageable_id%>" class="btn btn-s-sm btn-default ">Back</a> 
         </header>
         <div class="panel-body">
           <%= form_for @data , url: '/admin/workshop/update_work_of_workshop' , method: 'post', :html=>{class: 'form-horizontal'} do |f|%>
