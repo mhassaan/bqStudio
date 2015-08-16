@@ -1,0 +1,1059 @@
+I, [2015-08-16T18:15:56.146532 #22979]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:248:in `resolve_symbol_connection': '-D' database is not configured. Available: ["development", "test", "production", "cucumber"] (ActiveRecord::AdapterNotSpecified)
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:211:in `resolve_connection'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:139:in `resolve'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:169:in `spec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_handling.rb:50:in `establish_connection'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:44:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/base.rb:316:in `<module:ActiveRecord>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/base.rb:26:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/devise-3.5.1/lib/devise/orm/active_record.rb:3:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /root/bqStudio/config/initializers/devise.rb:24:in `block in <top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/devise-3.5.1/lib/devise.rb:281:in `setup'
+	from /root/bqStudio/config/initializers/devise.rb:3:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `block in load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:652:in `block in load_config_initializer'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications.rb:166:in `instrument'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:651:in `load_config_initializer'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:616:in `block (2 levels) in <class:Engine>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:615:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:615:in `block in <class:Engine>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `instance_exec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `run'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:226:in `block in tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:348:in `block (2 levels) in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:420:in `block (2 levels) in each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:429:in `each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:419:in `block in each_strongly_connected_component_from'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `tsort_each_child'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:413:in `call'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:413:in `each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:347:in `block in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `call'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:224:in `tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:203:in `tsort_each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:54:in `run_initializers'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/application.rb:352:in `initialize!'
+	from /root/bqStudio/config/environment.rb:5:in `<top (required)>'
+	from config.ru:4:in `require'
+	from config.ru:4:in `block in <main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn.rb:48:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn.rb:48:in `block in builder'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:768:in `call'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:768:in `build_app!'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:137:in `start'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+I, [2015-08-16T18:16:10.692027 #22987]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:248:in `resolve_symbol_connection': '-D' database is not configured. Available: ["development", "test", "production", "cucumber"] (ActiveRecord::AdapterNotSpecified)
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:211:in `resolve_connection'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:139:in `resolve'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:169:in `spec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_handling.rb:50:in `establish_connection'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:44:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/base.rb:316:in `<module:ActiveRecord>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/base.rb:26:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/devise-3.5.1/lib/devise/orm/active_record.rb:3:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /root/bqStudio/config/initializers/devise.rb:24:in `block in <top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/devise-3.5.1/lib/devise.rb:281:in `setup'
+	from /root/bqStudio/config/initializers/devise.rb:3:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `block in load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:652:in `block in load_config_initializer'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications.rb:166:in `instrument'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:651:in `load_config_initializer'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:616:in `block (2 levels) in <class:Engine>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:615:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:615:in `block in <class:Engine>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `instance_exec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `run'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:226:in `block in tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:348:in `block (2 levels) in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:420:in `block (2 levels) in each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:429:in `each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:419:in `block in each_strongly_connected_component_from'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `tsort_each_child'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:413:in `call'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:413:in `each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:347:in `block in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `call'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:224:in `tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:203:in `tsort_each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:54:in `run_initializers'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/application.rb:352:in `initialize!'
+	from /root/bqStudio/config/environment.rb:5:in `<top (required)>'
+	from config.ru:4:in `require'
+	from config.ru:4:in `block in <main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn.rb:48:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn.rb:48:in `block in builder'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:768:in `call'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:768:in `build_app!'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:137:in `start'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+I, [2015-08-16T18:16:19.025968 #22993]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:248:in `resolve_symbol_connection': '-P' database is not configured. Available: ["development", "test", "production", "cucumber"] (ActiveRecord::AdapterNotSpecified)
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:211:in `resolve_connection'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:139:in `resolve'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:169:in `spec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_handling.rb:50:in `establish_connection'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:44:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/base.rb:316:in `<module:ActiveRecord>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/base.rb:26:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/devise-3.5.1/lib/devise/orm/active_record.rb:3:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /root/bqStudio/config/initializers/devise.rb:24:in `block in <top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/devise-3.5.1/lib/devise.rb:281:in `setup'
+	from /root/bqStudio/config/initializers/devise.rb:3:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `block in load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:652:in `block in load_config_initializer'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications.rb:166:in `instrument'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:651:in `load_config_initializer'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:616:in `block (2 levels) in <class:Engine>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:615:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:615:in `block in <class:Engine>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `instance_exec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `run'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:226:in `block in tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:348:in `block (2 levels) in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:420:in `block (2 levels) in each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:429:in `each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:419:in `block in each_strongly_connected_component_from'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `tsort_each_child'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:413:in `call'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:413:in `each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:347:in `block in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `call'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:224:in `tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:203:in `tsort_each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:54:in `run_initializers'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/application.rb:352:in `initialize!'
+	from /root/bqStudio/config/environment.rb:5:in `<top (required)>'
+	from config.ru:4:in `require'
+	from config.ru:4:in `block in <main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn.rb:48:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn.rb:48:in `block in builder'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:768:in `call'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:768:in `build_app!'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:137:in `start'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+I, [2015-08-16T18:20:19.497076 #23203]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:248:in `resolve_symbol_connection': '-P' database is not configured. Available: ["development", "test", "production", "cucumber"] (ActiveRecord::AdapterNotSpecified)
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:211:in `resolve_connection'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:139:in `resolve'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:169:in `spec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_handling.rb:50:in `establish_connection'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:44:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/base.rb:316:in `<module:ActiveRecord>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/base.rb:26:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/devise-3.5.1/lib/devise/orm/active_record.rb:3:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /root/bqStudio/config/initializers/devise.rb:24:in `block in <top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/devise-3.5.1/lib/devise.rb:281:in `setup'
+	from /root/bqStudio/config/initializers/devise.rb:3:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `block in load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:652:in `block in load_config_initializer'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications.rb:166:in `instrument'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:651:in `load_config_initializer'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:616:in `block (2 levels) in <class:Engine>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:615:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:615:in `block in <class:Engine>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `instance_exec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `run'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:226:in `block in tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:348:in `block (2 levels) in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:420:in `block (2 levels) in each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:429:in `each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:419:in `block in each_strongly_connected_component_from'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `tsort_each_child'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:413:in `call'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:413:in `each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:347:in `block in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `call'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:224:in `tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:203:in `tsort_each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:54:in `run_initializers'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/application.rb:352:in `initialize!'
+	from /root/bqStudio/config/environment.rb:5:in `<top (required)>'
+	from config.ru:4:in `require'
+	from config.ru:4:in `block in <main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn.rb:48:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn.rb:48:in `block in builder'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:768:in `call'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:768:in `build_app!'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:137:in `start'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+I, [2015-08-16T18:21:07.588056 #23222]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:248:in `resolve_symbol_connection': '-P' database is not configured. Available: ["development", "test", "production", "cucumber"] (ActiveRecord::AdapterNotSpecified)
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:211:in `resolve_connection'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:139:in `resolve'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:169:in `spec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_handling.rb:50:in `establish_connection'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:44:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/base.rb:316:in `<module:ActiveRecord>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/base.rb:26:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/devise-3.5.1/lib/devise/orm/active_record.rb:3:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /root/bqStudio/config/initializers/devise.rb:24:in `block in <top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/devise-3.5.1/lib/devise.rb:281:in `setup'
+	from /root/bqStudio/config/initializers/devise.rb:3:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `block in load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:652:in `block in load_config_initializer'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications.rb:166:in `instrument'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:651:in `load_config_initializer'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:616:in `block (2 levels) in <class:Engine>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:615:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:615:in `block in <class:Engine>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `instance_exec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `run'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:226:in `block in tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:348:in `block (2 levels) in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:420:in `block (2 levels) in each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:429:in `each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:419:in `block in each_strongly_connected_component_from'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `tsort_each_child'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:413:in `call'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:413:in `each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:347:in `block in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `call'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:224:in `tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:203:in `tsort_each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:54:in `run_initializers'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/application.rb:352:in `initialize!'
+	from /root/bqStudio/config/environment.rb:5:in `<top (required)>'
+	from config.ru:4:in `require'
+	from config.ru:4:in `block in <main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn.rb:48:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn.rb:48:in `block in builder'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:768:in `call'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:768:in `build_app!'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:137:in `start'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+I, [2015-08-16T18:23:59.969526 #23313]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:248:in `resolve_symbol_connection': '-P' database is not configured. Available: ["development", "test", "production", "cucumber"] (ActiveRecord::AdapterNotSpecified)
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:211:in `resolve_connection'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:139:in `resolve'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:169:in `spec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_handling.rb:50:in `establish_connection'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:44:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/base.rb:316:in `<module:ActiveRecord>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/base.rb:26:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/devise-3.5.1/lib/devise/orm/active_record.rb:3:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /root/bqStudio/config/initializers/devise.rb:24:in `block in <top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/devise-3.5.1/lib/devise.rb:281:in `setup'
+	from /root/bqStudio/config/initializers/devise.rb:3:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `block in load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:652:in `block in load_config_initializer'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications.rb:166:in `instrument'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:651:in `load_config_initializer'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:616:in `block (2 levels) in <class:Engine>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:615:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:615:in `block in <class:Engine>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `instance_exec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `run'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:226:in `block in tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:348:in `block (2 levels) in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:420:in `block (2 levels) in each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:429:in `each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:419:in `block in each_strongly_connected_component_from'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `tsort_each_child'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:413:in `call'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:413:in `each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:347:in `block in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `call'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:224:in `tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:203:in `tsort_each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:54:in `run_initializers'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/application.rb:352:in `initialize!'
+	from /root/bqStudio/config/environment.rb:5:in `<top (required)>'
+	from config.ru:4:in `require'
+	from config.ru:4:in `block in <main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn.rb:48:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn.rb:48:in `block in builder'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:768:in `call'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:768:in `build_app!'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:137:in `start'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+I, [2015-08-16T18:28:32.946312 #23456]  INFO -- : Refreshing Gem list
+I, [2015-08-16T18:28:34.585126 #23456]  INFO -- : listening on addr=/root/bqStudio/shared/sockets/unicorn.sock fd=10
+I, [2015-08-16T18:28:34.585513 #23456]  INFO -- : listening on addr=0.0.0.0:80 fd=11
+I, [2015-08-16T18:28:34.585679 #23456]  INFO -- : worker=0 spawning...
+I, [2015-08-16T18:28:34.587743 #23456]  INFO -- : worker=1 spawning...
+I, [2015-08-16T18:28:34.588685 #23461]  INFO -- : worker=0 spawned pid=23461
+I, [2015-08-16T18:28:34.591726 #23456]  INFO -- : master process ready
+I, [2015-08-16T18:28:34.592824 #23464]  INFO -- : worker=1 spawned pid=23464
+I, [2015-08-16T18:28:34.595125 #23461]  INFO -- : worker=0 ready
+I, [2015-08-16T18:28:34.595952 #23464]  INFO -- : worker=1 ready
+182.185.234.193 - - [16/Aug/2015:18:28:37 -0400] "GET /zeasypiechart/jquery.easy-pie-chart.self-f49ad0b4137c9fd32f159fb980aa9a319b9afd203b396a6b8ed7339579331c9b.js?body=1 HTTP/1.1" 200 6852 1.1442
+182.185.234.193 - - [16/Aug/2015:18:28:37 -0400] "GET /zfasparkline/jquery.sparkline.min.self-d1340dd742e4521127575ed893142d01f7818a8f8e3c5a65bb9074a1ae98e7e2.js?body=1 HTTP/1.1" 200 43249 1.1337
+182.185.234.193 - - [16/Aug/2015:18:28:37 -0400] "GET /zflot/demo.self-7d48c0ef7cc1d14bcb933a283d48201e8851a89f46b8752ae6dcc53f4aef916d.js?body=1 HTTP/1.1" 200 8342 0.0155
+182.185.234.193 - - [16/Aug/2015:18:28:37 -0400] "GET /zflot/jquery.flot.grow.self-16dbc1dd424b0e154e2f1fbec0a8facaadd5d4c802167025e15d91af74b864d3.js?body=1 HTTP/1.1" 200 7806 0.0163
+182.185.234.193 - - [16/Aug/2015:18:28:37 -0400] "GET /zflot/jquery.flot.orderBars.self-57a3e6c122f1198a3967b99d982d59bc164ec19f6346fd15876d55878c6bfbc7.js?body=1 HTTP/1.1" 200 6039 0.0118
+182.185.234.193 - - [16/Aug/2015:18:28:37 -0400] "GET /zflot/jquery.flot.min.self-c7c37a7bc935e4387b153d44a2d4871d674f26a6a6095f8957d8cb1cb91a8ed0.js?body=1 HTTP/1.1" 200 36651 0.0195
+39.42.218.176 - - [16/Aug/2015:18:28:38 -0400] "GET /bootstrap.self-069a977d4aaaad86422b01e41c2bfe8008db95cee40d5022d26fe737b9925f0c.css?body=1 HTTP/1.1" 304 - 0.0228
+39.42.218.176 - - [16/Aug/2015:18:28:38 -0400] "GET /font-awesome.self-2d17540bab3759939e910ca38a695f014e0c777ded3ad7a01c4658b9d3fc980d.css?body=1 HTTP/1.1" 304 - 0.0419
+39.42.218.176 - - [16/Aug/2015:18:28:38 -0400] "GET /admin/animate.self-da9d65c74ab6ff3aa95aaa4d051cb15a9651258a17c07d00468cc7c55f251d64.css?body=1 HTTP/1.1" 304 - 0.0159
+39.42.218.176 - - [16/Aug/2015:18:28:38 -0400] "GET /admin/bootstrap.self-da3219b645c69fde33b52aba3cc2a69f354eccde54332f81da50d14e327bde18.css?body=1 HTTP/1.1" 304 - 0.0166
+182.185.234.193 - - [16/Aug/2015:18:28:38 -0400] "GET /zflot/jquery.flot.pie.min.self-febe89f43ea4124cde18e09f8345ce8693375e7e62706b129c760fabd2d2e242.js?body=1 HTTP/1.1" 200 10475 0.0140
+182.185.234.193 - - [16/Aug/2015:18:28:38 -0400] "GET /zflot/jquery.flot.resize.self-12b42753dc3dc88a36a2f62a3f9174fba03e07d1c32b010b11658c6a7a4ecd78.js?body=1 HTTP/1.1" 200 2459 0.0139
+182.185.234.193 - - [16/Aug/2015:18:28:38 -0400] "GET /zflot/jquery.flot.tooltip.min.self-3e7f6330b44412fcb8398de51a7f499a55ba55c4b98d9711027a7b0e70b87515.js?body=1 HTTP/1.1" 200 3797 0.0136
+182.185.234.193 - - [16/Aug/2015:18:28:38 -0400] "GET /application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1 HTTP/1.1" 200 582 0.0408
+39.42.218.176 - - [16/Aug/2015:18:28:39 -0400] "GET /admin/artist.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0150
+39.42.218.176 - - [16/Aug/2015:18:28:39 -0400] "GET / HTTP/1.1" 200 - 1.7796
+39.42.218.176 - - [16/Aug/2015:18:28:39 -0400] "GET /admin/datepicker.self-a3c11abc6cafe253cdaf92adb7630ebef42dfe8478ce41f9c9d376b4686d9ad5.css?body=1 HTTP/1.1" 304 - 0.0085
+39.42.218.176 - - [16/Aug/2015:18:28:39 -0400] "GET /admin/fileinput.self-d269e2fbba45b79503fa843012081736403b5982a4d9a950fcaedc0c752adf0d.css?body=1 HTTP/1.1" 304 - 0.0095
+182.185.234.193 - - [16/Aug/2015:18:28:39 -0400] "GET /logo.png HTTP/1.1" 200 3403 0.0214
+39.42.218.176 - - [16/Aug/2015:18:28:39 -0400] "GET /admin/font.self-0841131ad2f5bc0e4faa45baeaf172512ca031aa00ccd0f6ce1580aa474cfc28.css?body=1 HTTP/1.1" 304 - 0.0266
+39.42.218.176 - - [16/Aug/2015:18:28:39 -0400] "GET /admin/jquery.dataTables.self-a1a84193cc41d16317f26ce3f2508d0364242ea10948b0fbaff96223aa565f78.css?body=1 HTTP/1.1" 304 - 0.0174
+39.42.218.176 - - [16/Aug/2015:18:28:39 -0400] "GET /admin/newsletter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0121
+39.42.218.176 - - [16/Aug/2015:18:28:39 -0400] "GET /admin/landing.self-838dadd96bb51a8146e8d4ab9dc7262f8fea219b9e84a5c2cb5826f0b578db5e.css?body=1 HTTP/1.1" 304 - 0.0210
+39.42.218.176 - - [16/Aug/2015:18:28:40 -0400] "GET /admin/slider.self-90c12f7e0ffa0ee3a1a3bef8eb83bd2ad0b2ffb9a53af3d903ae036bc470107e.css?body=1 HTTP/1.1" 304 - 0.0093
+39.42.218.176 - - [16/Aug/2015:18:28:40 -0400] "GET /admin/visit.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0078
+39.42.218.176 - - [16/Aug/2015:18:28:40 -0400] "GET /admin/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0140
+39.42.218.176 - - [16/Aug/2015:18:28:40 -0400] "GET /admin/workshop.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0307
+39.42.218.176 - - [16/Aug/2015:18:28:40 -0400] "GET /admin/zapp.self-1f1a54025a3f76e5935f0a5dd385283f3b69365711f9b3091e99f81f1a2194bb.css?body=1 HTTP/1.1" 304 - 0.0274
+39.42.218.176 - - [16/Aug/2015:18:28:40 -0400] "GET /admin/zdatatablesbootstrap.self-13b9ccd05066f793742e4b110b94be4fdd785a9333b8a2c0212a6705b0d8bd19.css?body=1 HTTP/1.1" 304 - 0.0202
+39.42.218.176 - - [16/Aug/2015:18:28:40 -0400] "GET /admin/application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1 HTTP/1.1" 304 - 0.0750
+39.42.218.176 - - [16/Aug/2015:18:28:40 -0400] "GET /animate.self-333641f4cf39d7d96607ba067bbfe4e44266baa314a256270dedd65dfd2f97f3.css?body=1 HTTP/1.1" 304 - 0.0473
+39.42.218.176 - - [16/Aug/2015:18:28:41 -0400] "GET /artist.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0195
+39.42.218.176 - - [16/Aug/2015:18:28:41 -0400] "GET /et-line-font.self-38741f34ae0889f7329833b41c77685ba62ad0a3a8859cb68b7390166e05f647.css?body=1 HTTP/1.1" 304 - 0.0182
+39.42.218.176 - - [16/Aug/2015:18:28:41 -0400] "GET /home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0544
+39.42.218.176 - - [16/Aug/2015:18:28:41 -0400] "GET /lightbox.min.self-9b7e5ead37d0954b1dfe4a0593b474ef51cfb8ae669c08466107889ba454be9a.css?body=1 HTTP/1.1" 304 - 0.0456
+39.42.218.176 - - [16/Aug/2015:18:28:41 -0400] "GET /newsletter.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0281
+39.42.218.176 - - [16/Aug/2015:18:28:41 -0400] "GET /nojs.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0279
+39.42.218.176 - - [16/Aug/2015:18:28:41 -0400] "GET /owl.carousel.self-ad1798474744695e81071dda3d906ddadd86486a0677de386d35880426c72774.css?body=1 HTTP/1.1" 304 - 0.0192
+39.42.218.176 - - [16/Aug/2015:18:28:41 -0400] "GET /owl.transitions.self-f278ea62a3a667d3b3e64f03ba25f5363b3aa62d683da35a4a8ed55170a41bbc.css?body=1 HTTP/1.1" 304 - 0.0250
+39.42.218.176 - - [16/Aug/2015:18:28:41 -0400] "GET /reset.self-b16db259402102c22b1836e06a87dcab353afef593ec08221338d5f5c70a784d.css?body=1 HTTP/1.1" 304 - 0.0208
+39.42.218.176 - - [16/Aug/2015:18:28:41 -0400] "GET /smoothproducts.self-307f8cecd732dcacd8de1bb44edce497278d50ae1bdd5f1175efb98b6dfc8d9d.css?body=1 HTTP/1.1" 304 - 0.0193
+182.185.234.193 - - [16/Aug/2015:18:28:41 -0400] "GET /test.jpg HTTP/1.1" 200 58052 0.0431
+39.42.218.176 - - [16/Aug/2015:18:28:42 -0400] "GET /visit.self-b3d17bfee2bdb65f5d8566ecd2ca3000c80741d90c923f6ef02b2139cec8737b.css?body=1 HTTP/1.1" 304 - 0.0305
+39.42.218.176 - - [16/Aug/2015:18:28:42 -0400] "GET /style.self-c874fda81c71f43120848ef1b9d960473a702f16628957a70796271ed2b181f7.css?body=1 HTTP/1.1" 304 - 0.0403
+39.42.218.176 - - [16/Aug/2015:18:28:42 -0400] "GET /workshop.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1 HTTP/1.1" 304 - 0.0223
+39.42.218.176 - - [16/Aug/2015:18:28:42 -0400] "GET /application.self-167193cd81d9330d9ddb5c4ec7b44214fea529aa8a94f3a86e6526e4f652fc02.css?body=1 HTTP/1.1" 304 - 0.0261
+39.42.218.176 - - [16/Aug/2015:18:28:42 -0400] "GET /jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1 HTTP/1.1" 304 - 0.0363
+39.42.218.176 - - [16/Aug/2015:18:28:42 -0400] "GET /jquery.turbolinks.self-176b9819f30444d441e820bbccd3264fe57753aeafd54dec732b0dbc77129a2a.js?body=1 HTTP/1.1" 304 - 0.0254
+182.185.234.193 - - [16/Aug/2015:18:28:42 -0400] "GET /fontawesome-webfont-aadc3580d2b64ff5a7e6f1425587db4e8b033efcbf8f5c332ca52a5ed580c87c.woff2?v=4.3.0 HTTP/1.1" 200 56780 0.0432
+182.185.234.193 - - [16/Aug/2015:18:28:42 -0400] "GET /mem1.jpg HTTP/1.1" 200 13597 0.0171
+182.185.234.193 - - [16/Aug/2015:18:28:42 -0400] "GET /mem2.jpg HTTP/1.1" 200 14749 0.0199
+182.185.234.193 - - [16/Aug/2015:18:28:43 -0400] "GET /mem3.jpg HTTP/1.1" 200 15006 0.0188
+39.42.218.176 - - [16/Aug/2015:18:28:43 -0400] "GET /turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1 HTTP/1.1" 304 - 0.0257
+39.42.218.176 - - [16/Aug/2015:18:28:43 -0400] "GET /jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1 HTTP/1.1" 304 - 0.0105
+39.42.218.176 - - [16/Aug/2015:18:28:43 -0400] "GET /admin/amoment.min.self-9065dbc267d943d9abcee2d3353eb224ef7b1935f781bb0774bbe11aabc03de5.js?body=1 HTTP/1.1" 304 - 0.0068
+39.42.218.176 - - [16/Aug/2015:18:28:43 -0400] "GET /admin/artist.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0160
+39.42.218.176 - - [16/Aug/2015:18:28:43 -0400] "GET /admin/bootstrap-datepicker.self-a310b6993c2b4fb61936b45c11529651e5894951106fb245d06cc4d1f1052e45.js?body=1 HTTP/1.1" 304 - 0.0092
+39.42.218.176 - - [16/Aug/2015:18:28:43 -0400] "GET /admin/bootstrap-slider.self-0d8f7fc262d526b38098287d597c311abc106fed32e442f0479b12cfdc4d73b9.js?body=1 HTTP/1.1" 304 - 0.0073
+39.42.218.176 - - [16/Aug/2015:18:28:43 -0400] "GET /admin/bootstrap.self-c8d853976ca268a5391a9470ebdcf3ba43e0b78936cdc925146afcb60a3116be.js?body=1 HTTP/1.1" 304 - 0.0092
+39.42.218.176 - - [16/Aug/2015:18:28:43 -0400] "GET /admin/capp.self-dda11e2f97788b8308987a7ef2b7049e8506f5b5f71bc2d4eb7e5fe5e227e987.js?body=1 HTTP/1.1" 304 - 0.0169
+39.42.218.176 - - [16/Aug/2015:18:28:43 -0400] "GET /admin/capp.plugin.self-20d36c976cd37adac1111bcbdc46c55f9ce4c50614985124b3782bd54cb85676.js?body=1 HTTP/1.1" 304 - 0.0316
+39.42.218.176 - - [16/Aug/2015:18:28:43 -0400] "GET /admin/demo.self-7d48c0ef7cc1d14bcb933a283d48201e8851a89f46b8752ae6dcc53f4aef916d.js?body=1 HTTP/1.1" 304 - 0.0205
+39.42.218.176 - - [16/Aug/2015:18:28:44 -0400] "GET /admin/fileinput.self-9e4f193bb0cecc53b4233468189859dc829cfcd9dfb33f1503a1e39c91b69e03.js?body=1 HTTP/1.1" 304 - 0.0333
+39.42.218.176 - - [16/Aug/2015:18:28:44 -0400] "GET /admin/newsletter.self-912992709731c6ce0e2cad590cc527178bbf3b92edde861604734efdf19081f1.js?body=1 HTTP/1.1" 304 - 0.0195
+39.42.218.176 - - [16/Aug/2015:18:28:44 -0400] "GET /admin/slimscroll/jquery.slimscroll.min.self-3f2a21d7b7bce5e002fcfe476b55bb03104c57c8c4be56eb7e0525a5f3c8bfa8.js?body=1 HTTP/1.1" 304 - 0.0279
+39.42.218.176 - - [16/Aug/2015:18:28:44 -0400] "GET /admin/visit.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0076
+39.42.218.176 - - [16/Aug/2015:18:28:44 -0400] "GET /admin/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0077
+39.42.218.176 - - [16/Aug/2015:18:28:44 -0400] "GET /admin/workshop.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0171
+39.42.218.176 - - [16/Aug/2015:18:28:44 -0400] "GET /admin/zcombodate.self-90b313740e1fd5e920c0b6b99bc127e252d29f32e86d3833ddc58448220f0c80.js?body=1 HTTP/1.1" 304 - 0.0086
+39.42.218.176 - - [16/Aug/2015:18:28:44 -0400] "GET /admin/zdataTables.self-770bf6f5f52c93784a25c3c866719f24d091a3f864c36850a7d338b58bbed52c.js?body=1 HTTP/1.1" 304 - 0.0136
+182.185.234.193 - - [16/Aug/2015:18:28:44 -0400] "GET /loading.gif HTTP/1.1" 200 4765 0.0188
+39.42.218.176 - - [16/Aug/2015:18:28:45 -0400] "GET /admin/zeasypiechart/jquery.easy-pie-chart.self-f49ad0b4137c9fd32f159fb980aa9a319b9afd203b396a6b8ed7339579331c9b.js?body=1 HTTP/1.1" 304 - 0.0150
+39.42.218.176 - - [16/Aug/2015:18:28:45 -0400] "GET /admin/zfasparkline/jquery.sparkline.min.self-d1340dd742e4521127575ed893142d01f7818a8f8e3c5a65bb9074a1ae98e7e2.js?body=1 HTTP/1.1" 304 - 0.0141
+39.42.218.176 - - [16/Aug/2015:18:28:45 -0400] "GET /admin/zflot/demo.self-7d48c0ef7cc1d14bcb933a283d48201e8851a89f46b8752ae6dcc53f4aef916d.js?body=1 HTTP/1.1" 304 - 0.0152
+39.42.218.176 - - [16/Aug/2015:18:28:45 -0400] "GET /admin/zflot/jquery.flot.grow.self-16dbc1dd424b0e154e2f1fbec0a8facaadd5d4c802167025e15d91af74b864d3.js?body=1 HTTP/1.1" 304 - 0.0122
+39.42.218.176 - - [16/Aug/2015:18:28:45 -0400] "GET /admin/zflot/jquery.flot.min.self-c7c37a7bc935e4387b153d44a2d4871d674f26a6a6095f8957d8cb1cb91a8ed0.js?body=1 HTTP/1.1" 304 - 0.0159
+39.42.218.176 - - [16/Aug/2015:18:28:45 -0400] "GET /admin/zflot/jquery.flot.orderBars.self-57a3e6c122f1198a3967b99d982d59bc164ec19f6346fd15876d55878c6bfbc7.js?body=1 HTTP/1.1" 304 - 0.0146
+39.42.218.176 - - [16/Aug/2015:18:28:48 -0400] "GET / HTTP/1.1" 200 - 2.4294
+182.185.234.193 - - [16/Aug/2015:18:28:48 -0400] "GET /b21.png HTTP/1.1" 200 864 0.0186
+182.185.234.193 - - [16/Aug/2015:18:28:48 -0400] "GET /a21.png HTTP/1.1" 200 1286 0.0152
+39.42.218.176 - - [16/Aug/2015:18:28:48 -0400] "GET /admin/zflot/jquery.flot.pie.min.self-febe89f43ea4124cde18e09f8345ce8693375e7e62706b129c760fabd2d2e242.js?body=1 HTTP/1.1" 304 - 0.0122
+39.42.218.176 - - [16/Aug/2015:18:28:48 -0400] "GET /admin/zflot/jquery.flot.resize.self-12b42753dc3dc88a36a2f62a3f9174fba03e07d1c32b010b11658c6a7a4ecd78.js?body=1 HTTP/1.1" 304 - 0.0122
+39.42.218.176 - - [16/Aug/2015:18:28:48 -0400] "GET /admin/zflot/jquery.flot.tooltip.min.self-3e7f6330b44412fcb8398de51a7f499a55ba55c4b98d9711027a7b0e70b87515.js?body=1 HTTP/1.1" 304 - 0.0122
+39.42.218.176 - - [16/Aug/2015:18:28:48 -0400] "GET /admin/zzbootstraptables.self-dade12bc1e7ec0a3556ddbc8a2c8ea3de6cd850914a38f27f7d05328a805ba2d.js?body=1 HTTP/1.1" 304 - 0.0122
+39.42.218.176 - - [16/Aug/2015:18:28:48 -0400] "GET /admin/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1 HTTP/1.1" 304 - 0.0207
+39.42.218.176 - - [16/Aug/2015:18:28:49 -0400] "GET /artist.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0227
+39.42.218.176 - - [16/Aug/2015:18:28:49 -0400] "GET /athemepunch.revolution.self-252ec7911be1aaea89fd8551aae4937fb874396c3bf239c5941625bfd7d8c8f8.js?body=1 HTTP/1.1" 304 - 0.0193
+39.42.218.176 - - [16/Aug/2015:18:28:49 -0400] "GET /athemepunch.tools.min.self-0773b61ec12a597e27143dc6e3b4fb7fdb054c0708629921be78224ffc0e5878.js?body=1 HTTP/1.1" 304 - 0.0180
+39.42.218.176 - - [16/Aug/2015:18:28:49 -0400] "GET /bootstrap.self-c8d853976ca268a5391a9470ebdcf3ba43e0b78936cdc925146afcb60a3116be.js?body=1 HTTP/1.1" 304 - 0.0160
+39.42.218.176 - - [16/Aug/2015:18:28:49 -0400] "GET /capp.self-dda11e2f97788b8308987a7ef2b7049e8506f5b5f71bc2d4eb7e5fe5e227e987.js?body=1 HTTP/1.1" 304 - 0.0156
+39.42.218.176 - - [16/Aug/2015:18:28:49 -0400] "GET /home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0166
+39.42.218.176 - - [16/Aug/2015:18:28:49 -0400] "GET /jssor.slider.min.self-9f6fd3c3155f5f146e4459578964241bc6a503a239961a18ea0c4bd4f5434b8c.js?body=1 HTTP/1.1" 304 - 0.0205
+39.42.218.176 - - [16/Aug/2015:18:28:49 -0400] "GET /newsletter.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0140
+39.42.218.176 - - [16/Aug/2015:18:28:49 -0400] "GET /scripts.self-d87a4c94d86c0d1c112f04b7702d367ffb900faf9c9309f3b3343acc0eedf100.js?body=1 HTTP/1.1" 304 - 0.0138
+39.42.218.176 - - [16/Aug/2015:18:28:49 -0400] "GET /plugins.self-a6462612d9715290afba2e3d1a0dacbb59f0b2abbe6dcb2db24f5b507ddec4f3.js?body=1 HTTP/1.1" 304 - 0.0134
+39.42.218.176 - - [16/Aug/2015:18:28:49 -0400] "GET /slimscroll/jquery.slimscroll.min.self-3f2a21d7b7bce5e002fcfe476b55bb03104c57c8c4be56eb7e0525a5f3c8bfa8.js?body=1 HTTP/1.1" 304 - 0.0115
+39.42.218.176 - - [16/Aug/2015:18:28:49 -0400] "GET /visit.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0144
+39.42.218.176 - - [16/Aug/2015:18:28:50 -0400] "GET /workshop.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0161
+39.42.218.176 - - [16/Aug/2015:18:28:50 -0400] "GET /zeasypiechart/jquery.easy-pie-chart.self-f49ad0b4137c9fd32f159fb980aa9a319b9afd203b396a6b8ed7339579331c9b.js?body=1 HTTP/1.1" 304 - 0.0127
+39.42.218.176 - - [16/Aug/2015:18:28:50 -0400] "GET /zfasparkline/jquery.sparkline.min.self-d1340dd742e4521127575ed893142d01f7818a8f8e3c5a65bb9074a1ae98e7e2.js?body=1 HTTP/1.1" 304 - 0.0124
+39.42.218.176 - - [16/Aug/2015:18:28:50 -0400] "GET /zflot/demo.self-7d48c0ef7cc1d14bcb933a283d48201e8851a89f46b8752ae6dcc53f4aef916d.js?body=1 HTTP/1.1" 304 - 0.0123
+39.42.218.176 - - [16/Aug/2015:18:28:50 -0400] "GET /zflot/jquery.flot.grow.self-16dbc1dd424b0e154e2f1fbec0a8facaadd5d4c802167025e15d91af74b864d3.js?body=1 HTTP/1.1" 304 - 0.0135
+39.42.218.176 - - [16/Aug/2015:18:28:50 -0400] "GET /zflot/jquery.flot.min.self-c7c37a7bc935e4387b153d44a2d4871d674f26a6a6095f8957d8cb1cb91a8ed0.js?body=1 HTTP/1.1" 304 - 0.0131
+39.42.218.176 - - [16/Aug/2015:18:28:51 -0400] "GET /zflot/jquery.flot.orderBars.self-57a3e6c122f1198a3967b99d982d59bc164ec19f6346fd15876d55878c6bfbc7.js?body=1 HTTP/1.1" 304 - 0.0190
+39.42.218.176 - - [16/Aug/2015:18:28:51 -0400] "GET /zflot/jquery.flot.pie.min.self-febe89f43ea4124cde18e09f8345ce8693375e7e62706b129c760fabd2d2e242.js?body=1 HTTP/1.1" 304 - 0.0189
+39.42.218.176 - - [16/Aug/2015:18:28:51 -0400] "GET /zflot/jquery.flot.resize.self-12b42753dc3dc88a36a2f62a3f9174fba03e07d1c32b010b11658c6a7a4ecd78.js?body=1 HTTP/1.1" 304 - 0.0224
+39.42.218.176 - - [16/Aug/2015:18:28:51 -0400] "GET /zflot/jquery.flot.tooltip.min.self-3e7f6330b44412fcb8398de51a7f499a55ba55c4b98d9711027a7b0e70b87515.js?body=1 HTTP/1.1" 304 - 0.0150
+39.42.218.176 - - [16/Aug/2015:18:28:51 -0400] "GET /application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1 HTTP/1.1" 304 - 0.0235
+39.42.218.176 - - [16/Aug/2015:18:28:51 -0400] "GET /admin/amoment.min.self-9065dbc267d943d9abcee2d3353eb224ef7b1935f781bb0774bbe11aabc03de5.js?body=1 HTTP/1.1" 304 - 0.0116
+39.42.218.176 - - [16/Aug/2015:18:28:51 -0400] "GET /admin/artist.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1 HTTP/1.1" 304 - 0.0169
+39.42.218.176 - - [16/Aug/2015:18:28:51 -0400] "GET /logo.png HTTP/1.1" 304 - 0.0128
+39.42.218.176 - - [16/Aug/2015:18:28:51 -0400] "GET /test.jpg HTTP/1.1" 304 - 0.0126
+39.42.218.176 - - [16/Aug/2015:18:28:51 -0400] "GET /test2.jpg HTTP/1.1" 304 - 0.0135
+39.42.218.176 - - [16/Aug/2015:18:28:51 -0400] "GET /loading.gif HTTP/1.1" 304 - 0.0148
+39.42.218.176 - - [16/Aug/2015:18:28:52 -0400] "GET /parallax.jpg HTTP/1.1" 304 - 0.0143
+39.42.218.176 - - [16/Aug/2015:18:28:52 -0400] "GET /admin/bootstrap-datepicker.self-a310b6993c2b4fb61936b45c11529651e5894951106fb245d06cc4d1f1052e45.js?body=1 HTTP/1.1" 304 - 0.0076
+39.42.218.176 - - [16/Aug/2015:18:28:52 -0400] "GET /a21.png HTTP/1.1" 304 - 0.0071
+39.42.218.176 - - [16/Aug/2015:18:28:52 -0400] "GET /b21.png HTTP/1.1" 304 - 0.0080
+39.42.218.176 - - [16/Aug/2015:18:28:52 -0400] "GET /mem1.jpg HTTP/1.1" 304 - 0.0060
+39.42.218.176 - - [16/Aug/2015:18:28:52 -0400] "GET /mem2.jpg HTTP/1.1" 304 - 0.0074
+39.42.218.176 - - [16/Aug/2015:18:28:52 -0400] "GET /mem3.jpg HTTP/1.1" 304 - 0.0072
+39.42.218.176 - - [16/Aug/2015:18:28:53 -0400] "GET /admin/bootstrap-slider.self-0d8f7fc262d526b38098287d597c311abc106fed32e442f0479b12cfdc4d73b9.js?body=1 HTTP/1.1" 304 - 0.0253
+39.42.218.176 - - [16/Aug/2015:18:28:53 -0400] "GET /calloutparallax.jpg HTTP/1.1" 304 - 0.0140
+39.42.218.176 - - [16/Aug/2015:18:28:53 -0400] "GET /logo.png HTTP/1.1" 304 - 0.0351
+39.42.218.176 - - [16/Aug/2015:18:28:53 -0400] "GET /test.jpg HTTP/1.1" 304 - 0.0170
+39.42.218.176 - - [16/Aug/2015:18:28:53 -0400] "GET /test2.jpg HTTP/1.1" 304 - 0.0166
+39.42.218.176 - - [16/Aug/2015:18:28:53 -0400] "GET /mem1.jpg HTTP/1.1" 304 - 0.0160
+39.42.218.176 - - [16/Aug/2015:18:28:54 -0400] "GET /admin/bootstrap.self-c8d853976ca268a5391a9470ebdcf3ba43e0b78936cdc925146afcb60a3116be.js?body=1 HTTP/1.1" 304 - 0.0162
+39.42.218.176 - - [16/Aug/2015:18:28:54 -0400] "GET /mem3.jpg HTTP/1.1" 304 - 0.0144
+39.42.218.176 - - [16/Aug/2015:18:28:54 -0400] "GET /mem2.jpg HTTP/1.1" 304 - 0.0141
+182.185.234.193 - - [16/Aug/2015:18:28:54 -0400] "GET /test2.jpg HTTP/1.1" 200 441702 11.7925
+39.42.218.176 - - [16/Aug/2015:18:28:54 -0400] "GET /admin/capp.self-dda11e2f97788b8308987a7ef2b7049e8506f5b5f71bc2d4eb7e5fe5e227e987.js?body=1 HTTP/1.1" 304 - 0.0159
+39.42.218.176 - - [16/Aug/2015:18:28:55 -0400] "GET /admin/capp.plugin.self-20d36c976cd37adac1111bcbdc46c55f9ce4c50614985124b3782bd54cb85676.js?body=1 HTTP/1.1" 304 - 0.0162
+39.42.218.176 - - [16/Aug/2015:18:28:56 -0400] "GET /img/close.png HTTP/1.1" 404 66936 0.8689
+39.42.218.176 - - [16/Aug/2015:18:28:56 -0400] "GET /img/loading.gif HTTP/1.1" 404 66938 1.0033
+39.42.218.176 - - [16/Aug/2015:18:28:56 -0400] "GET /img/prev.png HTTP/1.1" 404 66935 0.9428
+182.185.234.193 - - [16/Aug/2015:18:28:56 -0400] "GET %2Ffavicon.ico HTTP/1.1" 200 - 0.0034
+39.42.218.176 - - [16/Aug/2015:18:28:56 -0400] "GET /admin/fileinput.self-9e4f193bb0cecc53b4233468189859dc829cfcd9dfb33f1503a1e39c91b69e03.js?body=1 HTTP/1.1" 304 - 0.0169
+39.42.218.176 - - [16/Aug/2015:18:28:57 -0400] "GET /img/next.png HTTP/1.1" 404 66935 0.9788
+39.42.218.176 - - [16/Aug/2015:18:28:57 -0400] "GET /admin/zcombodate.self-90b313740e1fd5e920c0b6b99bc127e252d29f32e86d3833ddc58448220f0c80.js?body=1 HTTP/1.1" 304 - 0.0083
+39.42.218.176 - - [16/Aug/2015:18:28:58 -0400] "GET /admin/zdataTables.self-770bf6f5f52c93784a25c3c866719f24d091a3f864c36850a7d338b58bbed52c.js?body=1 HTTP/1.1" 304 - 0.0152
+39.42.218.176 - - [16/Aug/2015:18:28:58 -0400] "GET /admin/zfasparkline/jquery.sparkline.min.self-d1340dd742e4521127575ed893142d01f7818a8f8e3c5a65bb9074a1ae98e7e2.js?body=1 HTTP/1.1" 304 - 0.0150
+39.42.218.176 - - [16/Aug/2015:18:28:59 -0400] "GET /admin/zflot/demo.self-7d48c0ef7cc1d14bcb933a283d48201e8851a89f46b8752ae6dcc53f4aef916d.js?body=1 HTTP/1.1" 304 - 0.0130
+39.42.218.176 - - [16/Aug/2015:18:28:59 -0400] "GET /admin/zflot/jquery.flot.min.self-c7c37a7bc935e4387b153d44a2d4871d674f26a6a6095f8957d8cb1cb91a8ed0.js?body=1 HTTP/1.1" 304 - 0.0108
+39.42.218.176 - - [16/Aug/2015:18:29:00 -0400] "GET /admin/zflot/jquery.flot.orderBars.self-57a3e6c122f1198a3967b99d982d59bc164ec19f6346fd15876d55878c6bfbc7.js?body=1 HTTP/1.1" 304 - 0.0172
+39.42.218.176 - - [16/Aug/2015:18:29:01 -0400] "GET /admin/zflot/jquery.flot.pie.min.self-febe89f43ea4124cde18e09f8345ce8693375e7e62706b129c760fabd2d2e242.js?body=1 HTTP/1.1" 304 - 0.0148
+I, [2015-08-16T18:29:01.708639 #23456]  INFO -- : reaped #<Process::Status: pid 23461 exit 0> worker=0
+I, [2015-08-16T18:29:01.708967 #23456]  INFO -- : reaped #<Process::Status: pid 23464 exit 0> worker=1
+I, [2015-08-16T18:29:01.709302 #23456]  INFO -- : master complete
+I, [2015-08-16T18:29:11.147130 #23482]  INFO -- : Refreshing Gem list
+I, [2015-08-16T18:29:13.765054 #23482]  INFO -- : unlinking existing socket=/root/bqStudio/shared/sockets/unicorn.sock
+I, [2015-08-16T18:29:13.765392 #23482]  INFO -- : listening on addr=/root/bqStudio/shared/sockets/unicorn.sock fd=10
+I, [2015-08-16T18:29:13.765563 #23482]  INFO -- : worker=0 spawning...
+I, [2015-08-16T18:29:13.768734 #23482]  INFO -- : worker=1 spawning...
+I, [2015-08-16T18:29:13.769947 #23487]  INFO -- : worker=0 spawned pid=23487
+I, [2015-08-16T18:29:13.771920 #23482]  INFO -- : master process ready
+I, [2015-08-16T18:29:13.775228 #23490]  INFO -- : worker=1 spawned pid=23490
+I, [2015-08-16T18:29:13.778268 #23490]  INFO -- : worker=1 ready
+I, [2015-08-16T18:29:13.779327 #23487]  INFO -- : worker=0 ready
+I, [2015-08-16T18:30:31.608343 #23482]  INFO -- : reaped #<Process::Status: pid 23487 exit 0> worker=0
+I, [2015-08-16T18:30:31.608644 #23482]  INFO -- : reaped #<Process::Status: pid 23490 exit 0> worker=1
+I, [2015-08-16T18:30:31.608868 #23482]  INFO -- : master complete
+I, [2015-08-16T18:32:10.072890 #23599]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:248:in `resolve_symbol_connection': '-D' database is not configured. Available: ["development", "test", "production", "cucumber"] (ActiveRecord::AdapterNotSpecified)
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:211:in `resolve_connection'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:139:in `resolve'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:169:in `spec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_handling.rb:50:in `establish_connection'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:44:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/base.rb:316:in `<module:ActiveRecord>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/base.rb:26:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/devise-3.5.1/lib/devise/orm/active_record.rb:3:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /root/bqStudio/config/initializers/devise.rb:24:in `block in <top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/devise-3.5.1/lib/devise.rb:281:in `setup'
+	from /root/bqStudio/config/initializers/devise.rb:3:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `block in load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:652:in `block in load_config_initializer'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications.rb:166:in `instrument'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:651:in `load_config_initializer'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:616:in `block (2 levels) in <class:Engine>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:615:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:615:in `block in <class:Engine>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `instance_exec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `run'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:226:in `block in tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:348:in `block (2 levels) in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:420:in `block (2 levels) in each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:429:in `each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:419:in `block in each_strongly_connected_component_from'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `tsort_each_child'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:413:in `call'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:413:in `each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:347:in `block in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `call'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:224:in `tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:203:in `tsort_each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:54:in `run_initializers'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/application.rb:352:in `initialize!'
+	from /root/bqStudio/config/environment.rb:5:in `<top (required)>'
+	from config.ru:4:in `require'
+	from config.ru:4:in `block in <main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn.rb:48:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn.rb:48:in `block in builder'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:768:in `call'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:768:in `build_app!'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:137:in `start'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+I, [2015-08-16T18:32:36.024531 #23612]  INFO -- : Refreshing Gem list
+I, [2015-08-16T18:32:39.032941 #23612]  INFO -- : unlinking existing socket=/root/bqStudio/shared/sockets/unicorn.sock
+I, [2015-08-16T18:32:39.033206 #23612]  INFO -- : listening on addr=/root/bqStudio/shared/sockets/unicorn.sock fd=10
+I, [2015-08-16T18:32:39.033369 #23612]  INFO -- : worker=0 spawning...
+I, [2015-08-16T18:32:39.037395 #23612]  INFO -- : worker=1 spawning...
+I, [2015-08-16T18:32:39.039762 #23619]  INFO -- : worker=0 spawned pid=23619
+I, [2015-08-16T18:32:39.044633 #23612]  INFO -- : master process ready
+I, [2015-08-16T18:32:39.046756 #23622]  INFO -- : worker=1 spawned pid=23622
+I, [2015-08-16T18:32:39.052744 #23619]  INFO -- : worker=0 ready
+I, [2015-08-16T18:32:39.054040 #23622]  INFO -- : worker=1 ready
+I, [2015-08-16T18:32:47.612364 #23612]  INFO -- : reaped #<Process::Status: pid 23619 exit 0> worker=0
+I, [2015-08-16T18:32:47.612618 #23612]  INFO -- : reaped #<Process::Status: pid 23622 exit 0> worker=1
+I, [2015-08-16T18:32:47.612877 #23612]  INFO -- : master complete
+I, [2015-08-16T18:33:10.096367 #23636]  INFO -- : Refreshing Gem list
+I, [2015-08-16T18:33:12.783220 #23636]  INFO -- : unlinking existing socket=/root/bqStudio/shared/sockets/unicorn.sock
+I, [2015-08-16T18:33:12.783503 #23636]  INFO -- : listening on addr=/root/bqStudio/shared/sockets/unicorn.sock fd=10
+I, [2015-08-16T18:33:12.783653 #23636]  INFO -- : worker=0 spawning...
+I, [2015-08-16T18:33:12.785750 #23636]  INFO -- : worker=1 spawning...
+I, [2015-08-16T18:33:12.786815 #23640]  INFO -- : worker=0 spawned pid=23640
+I, [2015-08-16T18:33:12.789309 #23640]  INFO -- : worker=0 ready
+I, [2015-08-16T18:33:12.791380 #23636]  INFO -- : master process ready
+I, [2015-08-16T18:33:12.792536 #23643]  INFO -- : worker=1 spawned pid=23643
+I, [2015-08-16T18:33:12.795063 #23643]  INFO -- : worker=1 ready
+I, [2015-08-16T18:34:57.022360 #23636]  INFO -- : reaped #<Process::Status: pid 23640 exit 0> worker=0
+I, [2015-08-16T18:34:57.023333 #23636]  INFO -- : reaped #<Process::Status: pid 23643 exit 0> worker=1
+I, [2015-08-16T18:34:57.024165 #23636]  INFO -- : master complete
+I, [2015-08-16T18:35:07.049961 #23751]  INFO -- : Refreshing Gem list
+I, [2015-08-16T18:35:09.049244 #23751]  INFO -- : unlinking existing socket=/root/bqStudio/shared/sockets/unicorn.sock
+I, [2015-08-16T18:35:09.049726 #23751]  INFO -- : listening on addr=/root/bqStudio/shared/sockets/unicorn.sock fd=10
+I, [2015-08-16T18:35:09.049933 #23751]  INFO -- : worker=0 spawning...
+I, [2015-08-16T18:35:09.052630 #23751]  INFO -- : worker=1 spawning...
+I, [2015-08-16T18:35:09.053613 #23755]  INFO -- : worker=0 spawned pid=23755
+I, [2015-08-16T18:35:09.055472 #23751]  INFO -- : master process ready
+I, [2015-08-16T18:35:09.057614 #23755]  INFO -- : worker=0 ready
+I, [2015-08-16T18:35:09.058372 #23758]  INFO -- : worker=1 spawned pid=23758
+I, [2015-08-16T18:35:09.060839 #23758]  INFO -- : worker=1 ready
+I, [2015-08-16T18:43:59.388248 #23751]  INFO -- : reaped #<Process::Status: pid 23755 exit 0> worker=0
+I, [2015-08-16T18:43:59.388786 #23751]  INFO -- : reaped #<Process::Status: pid 23758 exit 0> worker=1
+I, [2015-08-16T18:43:59.389186 #23751]  INFO -- : master complete
+I, [2015-08-16T18:44:49.094986 #24079]  INFO -- : Refreshing Gem list
+I, [2015-08-16T18:44:51.778358 #24079]  INFO -- : unlinking existing socket=/root/bqStudio/shared/sockets/unicorn.sock
+I, [2015-08-16T18:44:51.778847 #24079]  INFO -- : listening on addr=/root/bqStudio/shared/sockets/unicorn.sock fd=10
+I, [2015-08-16T18:44:51.779111 #24079]  INFO -- : worker=0 spawning...
+I, [2015-08-16T18:44:51.784084 #24083]  INFO -- : worker=0 spawned pid=24083
+I, [2015-08-16T18:44:51.786622 #24079]  INFO -- : worker=1 spawning...
+I, [2015-08-16T18:44:51.788583 #24079]  INFO -- : master process ready
+I, [2015-08-16T18:44:51.793258 #24083]  INFO -- : worker=0 ready
+I, [2015-08-16T18:44:51.794006 #24086]  INFO -- : worker=1 spawned pid=24086
+I, [2015-08-16T18:44:51.798367 #24086]  INFO -- : worker=1 ready
+I, [2015-08-16T18:45:01.218720 #24079]  INFO -- : reaped #<Process::Status: pid 24083 exit 0> worker=0
+I, [2015-08-16T18:45:01.219801 #24079]  INFO -- : reaped #<Process::Status: pid 24086 exit 0> worker=1
+I, [2015-08-16T18:45:01.220054 #24079]  INFO -- : master complete
+I, [2015-08-16T18:45:22.317398 #24089]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:248:in `resolve_symbol_connection': '-D' database is not configured. Available: ["development", "test", "production", "cucumber"] (ActiveRecord::AdapterNotSpecified)
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:211:in `resolve_connection'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:139:in `resolve'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:169:in `spec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_handling.rb:50:in `establish_connection'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:44:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/base.rb:316:in `<module:ActiveRecord>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/base.rb:26:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/devise-3.5.1/lib/devise/orm/active_record.rb:3:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /root/bqStudio/config/initializers/devise.rb:24:in `block in <top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/devise-3.5.1/lib/devise.rb:281:in `setup'
+	from /root/bqStudio/config/initializers/devise.rb:3:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `block in load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:652:in `block in load_config_initializer'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications.rb:166:in `instrument'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:651:in `load_config_initializer'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:616:in `block (2 levels) in <class:Engine>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:615:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:615:in `block in <class:Engine>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `instance_exec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `run'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:226:in `block in tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:348:in `block (2 levels) in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:420:in `block (2 levels) in each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:429:in `each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:419:in `block in each_strongly_connected_component_from'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `tsort_each_child'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:413:in `call'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:413:in `each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:347:in `block in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `call'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:224:in `tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:203:in `tsort_each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:54:in `run_initializers'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/application.rb:352:in `initialize!'
+	from /root/bqStudio/config/environment.rb:5:in `<top (required)>'
+	from config.ru:4:in `require'
+	from config.ru:4:in `block in <main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn.rb:48:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn.rb:48:in `block in builder'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:768:in `call'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:768:in `build_app!'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:137:in `start'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+I, [2015-08-16T18:46:04.043702 #24099]  INFO -- : Refreshing Gem list
+config.eager_load is set to nil. Please update your config/environments/*.rb files accordingly:
+
+  * development - set it to false
+  * test - set it to false (unless you use a tool that preloads your test environment)
+  * production - set it to true
+
+/usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:248:in `resolve_symbol_connection': '=production' database is not configured. Available: ["development", "test", "production", "cucumber"] (ActiveRecord::AdapterNotSpecified)
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:211:in `resolve_connection'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:139:in `resolve'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_adapters/connection_specification.rb:169:in `spec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/connection_handling.rb:50:in `establish_connection'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/railtie.rb:120:in `block (2 levels) in <class:Railtie>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:38:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:38:in `execute_hook'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:45:in `block in run_load_hooks'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:44:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/lazy_load_hooks.rb:44:in `run_load_hooks'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/base.rb:316:in `<module:ActiveRecord>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activerecord-4.2.1/lib/active_record/base.rb:26:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/devise-3.5.1/lib/devise/orm/active_record.rb:3:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `block in require'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:274:in `require'
+	from /root/bqStudio/config/initializers/devise.rb:24:in `block in <top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/devise-3.5.1/lib/devise.rb:281:in `setup'
+	from /root/bqStudio/config/initializers/devise.rb:3:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `block in load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:240:in `load_dependency'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/dependencies.rb:268:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:652:in `block in load_config_initializer'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/activesupport-4.2.1/lib/active_support/notifications.rb:166:in `instrument'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:651:in `load_config_initializer'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:616:in `block (2 levels) in <class:Engine>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:615:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/engine.rb:615:in `block in <class:Engine>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `instance_exec'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:30:in `run'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:55:in `block in run_initializers'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:226:in `block in tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:348:in `block (2 levels) in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:420:in `block (2 levels) in each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:429:in `each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:419:in `block in each_strongly_connected_component_from'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:44:in `tsort_each_child'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:413:in `call'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:413:in `each_strongly_connected_component_from'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:347:in `block in each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `call'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:345:in `each_strongly_connected_component'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:224:in `tsort_each'
+	from /usr/local/rvm/rubies/ruby-2.2.1/lib/ruby/2.2.0/tsort.rb:203:in `tsort_each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/initializable.rb:54:in `run_initializers'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/railties-4.2.1/lib/rails/application.rb:352:in `initialize!'
+	from /root/bqStudio/config/environment.rb:5:in `<top (required)>'
+	from config.ru:4:in `require'
+	from config.ru:4:in `block in <main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `instance_eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/rack-1.6.4/lib/rack/builder.rb:55:in `initialize'
+	from config.ru:1:in `new'
+	from config.ru:1:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn.rb:48:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn.rb:48:in `block in builder'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:768:in `call'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:768:in `build_app!'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:137:in `start'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+I, [2015-08-16T18:46:29.732281 #24104]  INFO -- : Refreshing Gem list
+I, [2015-08-16T18:46:32.729874 #24104]  INFO -- : unlinking existing socket=/root/bqStudio/shared/sockets/unicorn.sock
+I, [2015-08-16T18:46:32.730556 #24104]  INFO -- : listening on addr=/root/bqStudio/shared/sockets/unicorn.sock fd=10
+I, [2015-08-16T18:46:32.730888 #24104]  INFO -- : worker=0 spawning...
+I, [2015-08-16T18:46:32.751908 #24104]  INFO -- : worker=1 spawning...
+I, [2015-08-16T18:46:32.756272 #24108]  INFO -- : worker=0 spawned pid=24108
+I, [2015-08-16T18:46:32.758948 #24104]  INFO -- : master process ready
+I, [2015-08-16T18:46:32.760920 #24110]  INFO -- : worker=1 spawned pid=24110
+I, [2015-08-16T18:46:32.771374 #24108]  INFO -- : worker=0 ready
+I, [2015-08-16T18:46:32.773349 #24110]  INFO -- : worker=1 ready
+I, [2015-08-16T18:47:22.446134 #24104]  INFO -- : reaped #<Process::Status: pid 24108 exit 0> worker=0
+I, [2015-08-16T18:47:22.446589 #24104]  INFO -- : reaped #<Process::Status: pid 24110 exit 0> worker=1
+I, [2015-08-16T18:47:22.446791 #24104]  INFO -- : master complete
+I, [2015-08-16T18:47:41.550150 #24126]  INFO -- : Refreshing Gem list
+I, [2015-08-16T18:47:43.654140 #24126]  INFO -- : unlinking existing socket=/root/bqStudio/shared/sockets/unicorn.sock
+I, [2015-08-16T18:47:43.654436 #24126]  INFO -- : listening on addr=/root/bqStudio/shared/sockets/unicorn.sock fd=10
+I, [2015-08-16T18:47:43.654605 #24126]  INFO -- : worker=0 spawning...
+I, [2015-08-16T18:47:43.656854 #24126]  INFO -- : worker=1 spawning...
+I, [2015-08-16T18:47:43.657825 #24132]  INFO -- : worker=0 spawned pid=24132
+I, [2015-08-16T18:47:43.659570 #24126]  INFO -- : master process ready
+I, [2015-08-16T18:47:43.662120 #24132]  INFO -- : worker=0 ready
+I, [2015-08-16T18:47:43.663062 #24135]  INFO -- : worker=1 spawned pid=24135
+I, [2015-08-16T18:47:43.665288 #24135]  INFO -- : worker=1 ready
+I, [2015-08-16T18:52:39.051006 #24126]  INFO -- : reaped #<Process::Status: pid 24132 exit 0> worker=0
+I, [2015-08-16T18:52:39.051328 #24126]  INFO -- : reaped #<Process::Status: pid 24135 exit 0> worker=1
+I, [2015-08-16T18:52:39.051570 #24126]  INFO -- : master complete
+I, [2015-08-16T18:56:00.305293 #24498]  INFO -- : Refreshing Gem list
+I, [2015-08-16T18:56:03.393080 #24498]  INFO -- : unlinking existing socket=/root/bqStudio/shared/sockets/unicorn.sock
+I, [2015-08-16T18:56:03.393332 #24498]  INFO -- : listening on addr=/root/bqStudio/shared/sockets/unicorn.sock fd=11
+I, [2015-08-16T18:56:03.393504 #24498]  INFO -- : worker=0 spawning...
+I, [2015-08-16T18:56:03.395998 #24498]  INFO -- : worker=1 spawning...
+I, [2015-08-16T18:56:03.397074 #24502]  INFO -- : worker=0 spawned pid=24502
+I, [2015-08-16T18:56:03.399900 #24498]  INFO -- : master process ready
+I, [2015-08-16T18:56:03.408371 #24505]  INFO -- : worker=1 spawned pid=24505
+I, [2015-08-16T18:56:03.417518 #24502]  INFO -- : worker=0 ready
+I, [2015-08-16T18:56:03.422871 #24505]  INFO -- : worker=1 ready
+I, [2015-08-16T18:57:14.783132 #24498]  INFO -- : reaped #<Process::Status: pid 24502 exit 0> worker=0
+I, [2015-08-16T18:57:14.783385 #24498]  INFO -- : reaped #<Process::Status: pid 24505 exit 0> worker=1
+I, [2015-08-16T18:57:14.783506 #24498]  INFO -- : master complete
+I, [2015-08-16T18:58:25.942356 #24601]  INFO -- : Refreshing Gem list
+I, [2015-08-16T18:58:27.634821 #24601]  INFO -- : unlinking existing socket=/root/bqStudio/shared/sockets/unicorn.sock
+I, [2015-08-16T18:58:27.635085 #24601]  INFO -- : listening on addr=/root/bqStudio/shared/sockets/unicorn.sock fd=10
+I, [2015-08-16T18:58:27.635214 #24601]  INFO -- : worker=0 spawning...
+I, [2015-08-16T18:58:27.637524 #24601]  INFO -- : worker=1 spawning...
+I, [2015-08-16T18:58:27.638437 #24605]  INFO -- : worker=0 spawned pid=24605
+I, [2015-08-16T18:58:27.641271 #24605]  INFO -- : worker=0 ready
+I, [2015-08-16T18:58:27.642805 #24601]  INFO -- : master process ready
+I, [2015-08-16T18:58:27.643781 #24608]  INFO -- : worker=1 spawned pid=24608
+I, [2015-08-16T18:58:27.646305 #24608]  INFO -- : worker=1 ready
+I, [2015-08-16T18:58:31.435813 #24601]  INFO -- : reaped #<Process::Status: pid 24605 exit 0> worker=0
+I, [2015-08-16T18:58:31.437439 #24601]  INFO -- : reaped #<Process::Status: pid 24608 exit 0> worker=1
+I, [2015-08-16T18:58:31.437784 #24601]  INFO -- : master complete
+I, [2015-08-16T18:58:35.655993 #24611]  INFO -- : Refreshing Gem list
+I, [2015-08-16T18:58:37.754491 #24611]  INFO -- : unlinking existing socket=/root/bqStudio/shared/sockets/unicorn.sock
+I, [2015-08-16T18:58:37.754758 #24611]  INFO -- : listening on addr=/root/bqStudio/shared/sockets/unicorn.sock fd=10
+E, [2015-08-16T18:58:37.755199 #24611] ERROR -- : adding listener failed addr=0.0.0.0:80 (in use)
+E, [2015-08-16T18:58:37.755253 #24611] ERROR -- : retrying in 0.5 seconds (4 tries left)
+E, [2015-08-16T18:58:38.255859 #24611] ERROR -- : adding listener failed addr=0.0.0.0:80 (in use)
+E, [2015-08-16T18:58:38.256062 #24611] ERROR -- : retrying in 0.5 seconds (3 tries left)
+E, [2015-08-16T18:58:38.756732 #24611] ERROR -- : adding listener failed addr=0.0.0.0:80 (in use)
+E, [2015-08-16T18:58:38.756927 #24611] ERROR -- : retrying in 0.5 seconds (2 tries left)
+E, [2015-08-16T18:58:39.257411 #24611] ERROR -- : adding listener failed addr=0.0.0.0:80 (in use)
+E, [2015-08-16T18:58:39.257548 #24611] ERROR -- : retrying in 0.5 seconds (1 tries left)
+E, [2015-08-16T18:58:39.758255 #24611] ERROR -- : adding listener failed addr=0.0.0.0:80 (in use)
+E, [2015-08-16T18:58:39.758518 #24611] ERROR -- : retrying in 0.5 seconds (0 tries left)
+E, [2015-08-16T18:58:40.258979 #24611] ERROR -- : adding listener failed addr=0.0.0.0:80 (in use)
+/usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/socket_helper.rb:185:in `bind': Address already in use - bind(2) for 0.0.0.0:80 (Errno::EADDRINUSE)
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/socket_helper.rb:185:in `new_tcp_server'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/socket_helper.rb:165:in `bind_listen'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:242:in `listen'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:813:in `block in bind_new_listeners!'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:813:in `each'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:813:in `bind_new_listeners!'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/lib/unicorn/http_server.rb:138:in `start'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-4.9.0/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn:23:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+I, [2015-08-16T18:58:48.293553 #24637]  INFO -- : Refreshing Gem list
+I, [2015-08-16T18:58:50.940141 #24637]  INFO -- : unlinking existing socket=/root/bqStudio/shared/sockets/unicorn.sock
+I, [2015-08-16T18:58:50.940402 #24637]  INFO -- : listening on addr=/root/bqStudio/shared/sockets/unicorn.sock fd=10
+I, [2015-08-16T18:58:50.940797 #24637]  INFO -- : listening on addr=0.0.0.0:80 fd=11
+I, [2015-08-16T18:58:50.940934 #24637]  INFO -- : worker=0 spawning...
+I, [2015-08-16T18:58:50.943389 #24637]  INFO -- : worker=1 spawning...
+I, [2015-08-16T18:58:50.944382 #24637]  INFO -- : master process ready
+I, [2015-08-16T18:58:50.945418 #24641]  INFO -- : worker=0 spawned pid=24641
+I, [2015-08-16T18:58:50.947085 #24643]  INFO -- : worker=1 spawned pid=24643
+I, [2015-08-16T18:58:50.949512 #24643]  INFO -- : worker=1 ready
+I, [2015-08-16T18:58:50.951259 #24641]  INFO -- : worker=0 ready
+E, [2015-08-16T18:59:27.976841 #24637] ERROR -- : worker=0 PID:24641 timeout (31s > 30s), killing
+E, [2015-08-16T18:59:27.982766 #24637] ERROR -- : worker=1 PID:24643 timeout (31s > 30s), killing
+E, [2015-08-16T18:59:28.007146 #24637] ERROR -- : reaped #<Process::Status: pid 24643 SIGKILL (signal 9)> worker=1
+E, [2015-08-16T18:59:28.007369 #24637] ERROR -- : worker=0 PID:24641 timeout (32s > 30s), killing
+I, [2015-08-16T18:59:28.007648 #24637]  INFO -- : worker=1 spawning...
+E, [2015-08-16T18:59:28.010686 #24637] ERROR -- : reaped #<Process::Status: pid 24641 SIGKILL (signal 9)> worker=0
+I, [2015-08-16T18:59:28.011812 #24637]  INFO -- : worker=0 spawning...
+I, [2015-08-16T18:59:28.015487 #24649]  INFO -- : worker=1 spawned pid=24649
+I, [2015-08-16T18:59:28.020087 #24651]  INFO -- : worker=0 spawned pid=24651
+I, [2015-08-16T18:59:28.030493 #24649]  INFO -- : worker=1 ready
+I, [2015-08-16T18:59:28.030354 #24651]  INFO -- : worker=0 ready
+I, [2015-08-16T19:00:57.069855 #24637]  INFO -- : reaped #<Process::Status: pid 24649 exit 0> worker=1
+I, [2015-08-16T19:00:57.070108 #24637]  INFO -- : reaped #<Process::Status: pid 24651 exit 0> worker=0
+I, [2015-08-16T19:00:57.070284 #24637]  INFO -- : master complete
+I, [2015-08-16T19:01:00.099623 #24661]  INFO -- : Refreshing Gem list
+I, [2015-08-16T19:01:02.812808 #24661]  INFO -- : unlinking existing socket=/root/bqStudio/shared/sockets/unicorn.sock
+I, [2015-08-16T19:01:02.813061 #24661]  INFO -- : listening on addr=/root/bqStudio/shared/sockets/unicorn.sock fd=11
+I, [2015-08-16T19:01:02.813475 #24661]  INFO -- : listening on addr=0.0.0.0:80 fd=12
+I, [2015-08-16T19:01:02.813675 #24661]  INFO -- : worker=0 spawning...
+I, [2015-08-16T19:01:02.815953 #24661]  INFO -- : worker=1 spawning...
+I, [2015-08-16T19:01:02.816833 #24665]  INFO -- : worker=0 spawned pid=24665
+I, [2015-08-16T19:01:02.819900 #24661]  INFO -- : master process ready
+I, [2015-08-16T19:01:02.827635 #24668]  INFO -- : worker=1 spawned pid=24668
+I, [2015-08-16T19:01:02.835805 #24665]  INFO -- : worker=0 ready
+I, [2015-08-16T19:01:02.836293 #24668]  INFO -- : worker=1 ready
+I, [2015-08-16T19:11:39.584726 #25009]  INFO -- : Refreshing Gem list
+I, [2015-08-16T19:11:41.804293 #25009]  INFO -- : unlinking existing socket=/root/bqStudio/shared/sockets/unicorn.sock
+I, [2015-08-16T19:11:41.804540 #25009]  INFO -- : listening on addr=/root/bqStudio/shared/sockets/unicorn.sock fd=10
+I, [2015-08-16T19:11:41.804711 #25009]  INFO -- : worker=0 spawning...
+I, [2015-08-16T19:11:41.807185 #25009]  INFO -- : worker=1 spawning...
+I, [2015-08-16T19:11:41.808440 #25009]  INFO -- : master process ready
+I, [2015-08-16T19:11:41.809727 #25021]  INFO -- : worker=0 spawned pid=25021
+I, [2015-08-16T19:11:41.811072 #25023]  INFO -- : worker=1 spawned pid=25023
+I, [2015-08-16T19:11:41.813706 #25023]  INFO -- : worker=1 ready
+I, [2015-08-16T19:11:41.815922 #25021]  INFO -- : worker=0 ready
+I, [2015-08-16T19:13:52.614817 #25009]  INFO -- : reaped #<Process::Status: pid 25021 exit 0> worker=0
+I, [2015-08-16T19:13:52.615122 #25009]  INFO -- : reaped #<Process::Status: pid 25023 exit 0> worker=1
+I, [2015-08-16T19:13:52.615336 #25009]  INFO -- : master complete
+I, [2015-08-16T19:15:46.095152 #25275]  INFO -- : Refreshing Gem list
+I, [2015-08-16T19:15:49.016777 #25275]  INFO -- : listening on addr=/tmp/unicorn.shop.sock fd=10
+I, [2015-08-16T19:15:49.016990 #25275]  INFO -- : worker=0 spawning...
+I, [2015-08-16T19:15:49.019472 #25275]  INFO -- : worker=1 spawning...
+I, [2015-08-16T19:15:49.020565 #25275]  INFO -- : master process ready
+I, [2015-08-16T19:15:49.021723 #25279]  INFO -- : worker=0 spawned pid=25279
+I, [2015-08-16T19:15:49.023070 #25281]  INFO -- : worker=1 spawned pid=25281
+I, [2015-08-16T19:15:49.025912 #25281]  INFO -- : worker=1 ready
+I, [2015-08-16T19:15:49.028207 #25279]  INFO -- : worker=0 ready
+I, [2015-08-16T19:16:13.298928 #25275]  INFO -- : reaped #<Process::Status: pid 25279 exit 0> worker=0
+I, [2015-08-16T19:16:13.299100 #25275]  INFO -- : reaped #<Process::Status: pid 25281 exit 0> worker=1
+I, [2015-08-16T19:16:13.299243 #25275]  INFO -- : master complete
+I, [2015-08-16T19:16:25.715840 #25333]  INFO -- : Refreshing Gem list
+I, [2015-08-16T19:16:28.533144 #25333]  INFO -- : unlinking existing socket=/tmp/unicorn.shop.sock
+I, [2015-08-16T19:16:28.533393 #25333]  INFO -- : listening on addr=/tmp/unicorn.shop.sock fd=11
+I, [2015-08-16T19:16:28.533583 #25333]  INFO -- : worker=0 spawning...
+I, [2015-08-16T19:16:28.535860 #25333]  INFO -- : worker=1 spawning...
+I, [2015-08-16T19:16:28.536763 #25337]  INFO -- : worker=0 spawned pid=25337
+I, [2015-08-16T19:16:28.540409 #25333]  INFO -- : master process ready
+I, [2015-08-16T19:16:28.547754 #25340]  INFO -- : worker=1 spawned pid=25340
+I, [2015-08-16T19:16:28.555771 #25337]  INFO -- : worker=0 ready
+I, [2015-08-16T19:16:28.556367 #25340]  INFO -- : worker=1 ready
+I, [2015-08-16T19:20:44.297701 #25691]  INFO -- : Refreshing Gem list
+I, [2015-08-16T19:20:46.909301 #25691]  INFO -- : unlinking existing socket=/tmp/unicorn.shop.sock
+I, [2015-08-16T19:20:46.909765 #25691]  INFO -- : listening on addr=/tmp/unicorn.shop.sock fd=11
+I, [2015-08-16T19:20:46.910052 #25691]  INFO -- : worker=0 spawning...
+I, [2015-08-16T19:20:46.913677 #25691]  INFO -- : worker=1 spawning...
+I, [2015-08-16T19:20:46.915752 #25695]  INFO -- : worker=0 spawned pid=25695
+I, [2015-08-16T19:20:46.920658 #25691]  INFO -- : master process ready
+I, [2015-08-16T19:20:46.947208 #25698]  INFO -- : worker=1 spawned pid=25698
+I, [2015-08-16T19:20:46.959330 #25695]  INFO -- : worker=0 ready
+I, [2015-08-16T19:20:46.966871 #25698]  INFO -- : worker=1 ready
