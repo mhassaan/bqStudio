@@ -35,7 +35,7 @@ production:
   database: studio_production
   pool: 5
   username: root
-  password: root
+  password: 
   host: localhost
 
 cucumber:
