@@ -1,0 +1,12 @@
+defaults: &defaults
+  base_url: http://localhost:3000
+
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  base_url: http://46.101.43.15/
