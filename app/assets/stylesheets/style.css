@@ -21,7 +21,8 @@ h3 {
     font-size: 26px
 }
 h4 {
-    font-size: 18px
+    font-size: 18px;
+    color: #b4b4b4;
 }
 h5 {
     font-size: 16px
@@ -91,7 +92,7 @@ article a:hover,
 .rectangle-hover i,
 a.footer-toggle:hover,
 #footer-toggle a:hover i {
-    color: #22cea0 !important
+    color: #ffc20e !important
 }
 .owl-controls .active span,
 .counter-1 hr,
@@ -102,7 +103,7 @@ a.footer-toggle:hover,
 .chart,
 .button-4:hover,
 .infobox-circle .circle {
-    border-color: #22cea0 !important
+    border-color: #ffc20e !important
 }
 .circle i:after,
 .circle-sign i,
@@ -114,7 +115,7 @@ a.footer-toggle:hover,
 mark.general,
 .shade-5,
 .scroll-top:hover {
-    background-color: #22cea0 !important
+    background-color: #ffc20e !important
 }
 a:hover,
 a:active,
@@ -1172,7 +1173,7 @@ callout-box-5 a:hover {
 .box-text-2 output {
     margin-top: 20px;
     padding-top: 0;
-    color: #262626
+    color: #ffc20e;
 }
 .box-button {
     display: inline-block;
@@ -1382,7 +1383,8 @@ callout-box-5 a:hover {
     margin-top: 0
 }
 .infobox-text-2 h6 {
-    margin-top: 0
+    margin-top: 0;
+    color: #ffc20e;
 }
 .infobox-text {
     background-color: #fff;
@@ -2048,7 +2050,7 @@ header .full-width {
 }
 .widget i {
     color: #262626;
-    background-color: #fff;
+    background-color: #ffc20e;
     border-radius: 17.5px;
     height: 35px;
     width: 35px;
@@ -2311,6 +2313,11 @@ header .full-width {
     font-weight: bold;
     color: #262626
 }
+.infobox-4 h1 {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #ffc20e;
+}
 .infobox-4 hr {
     width: 40px;
     color: #e4e4e4;
@@ -2353,7 +2360,7 @@ header .full-width {
 .infobox-2 h4 {
     margin-top: 0;
     font-weight: bold;
-    color: #262626
+    color: #ffc20e;
 }
 .infobox-2 h3 {
     margin-top: 15px;
@@ -3386,7 +3393,7 @@ section.footer {
     background-color: #1f1f1f
 }
 p.footer {
-    color: #959595;
+    color: #ffc20e;
     letter-spacing: 0;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;

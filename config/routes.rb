@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   namespace :admin do
     root 'welcome#index'
+    resources :banner do 
+    end
     resources :artist do 
       collection do 
         get 'new_work_to_artist/:id'=> 'artist#new_work_to_artist'

@@ -1,0 +1,29 @@
+<section id="content">
+  <section class="vbox">
+    <section class="scrollable padder">
+      <ul class="breadcrumb no-border no-radius b-b b-light pull-in">
+      <li><a href="" ><i class="fa fa-home"></i> Banner</a></li>
+      <li><a href="#">View</a></li>
+      </ul>
+      <div class="m-b-md">
+        <h3 class="m-b-none">View Banner</h3>
+      </div>
+      <section class="panel panel-default">
+        <header class="panel-heading font-bold">
+         Banner Detail
+        </header>
+        <div class="panel-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Photo</label>
+              <div class="col-sm-4">
+                <%= image_tag @data.avatar.url(:medium) %>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </section>
+  </section>
+  <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen" data-target="#nav"></a>
+</section>

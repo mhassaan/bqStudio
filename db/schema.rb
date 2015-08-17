@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150815200220) do
+ActiveRecord::Schema.define(version: 20150817145103) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  limit: 255, default: "", null: false
@@ -45,14 +45,23 @@ ActiveRecord::Schema.define(version: 20150815200220) do
   end
 
   create_table "artists", force: :cascade do |t|
-    t.datetime "created_at",                         null: false
-    t.datetime "updated_at",                         null: false
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
     t.string   "name",                   limit: 255
-    t.string   "work_desc",              limit: 255
+    t.text     "work_desc",              limit: 65535
     t.string   "cover_pic_file_name",    limit: 255
     t.string   "cover_pic_content_type", limit: 255
     t.integer  "cover_pic_file_size",    limit: 4
     t.datetime "cover_pic_updated_at"
+  end
+
+  create_table "banners", force: :cascade do |t|
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+    t.string   "avatar_file_name",    limit: 255
+    t.string   "avatar_content_type", limit: 255
+    t.integer  "avatar_file_size",    limit: 4
+    t.datetime "avatar_updated_at"
   end
 
   create_table "newsletters", force: :cascade do |t|
@@ -93,10 +102,10 @@ ActiveRecord::Schema.define(version: 20150815200220) do
   end
 
   create_table "workshops", force: :cascade do |t|
-    t.datetime "created_at",                         null: false
-    t.datetime "updated_at",                         null: false
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
     t.string   "name",                   limit: 255
-    t.string   "desc",                   limit: 255
+    t.text     "desc",                   limit: 65535
     t.string   "location",               limit: 255
     t.string   "cover_pic_file_name",    limit: 255
     t.string   "cover_pic_content_type", limit: 255
