@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   end
   resources :workshop do 
   end
+  resources :residancy do 
+  end
   resources :newsletter do 
     collection do 
       get 'article_detail/:id'=> 'newsletter#article_detail'
@@ -20,6 +22,16 @@ Rails.application.routes.draw do
   namespace :admin do
     root 'welcome#index'
     resources :banner do 
+    end
+    resources :residancy do 
+      collection do
+        get 'new_work_to_residancy/:id'=> 'residancy#new_work_to_residancy'
+        get 'show_work_of_residancy/:id'=> 'residancy#show_work_of_residancy'
+        post 'add_work_to_residancy'=> 'residancy#add_work_to_residancy'
+        get 'edit_work_of_residancy/:id'=> 'residancy#edit_work_of_residancy'
+        post 'update_work_of_residancy'=> 'residancy#update_work_of_residancy'
+        delete 'delete_work_of_residancy/:id' => 'residancy#delete_work_of_residancy'
+      end
     end
     resources :artist do 
       collection do 

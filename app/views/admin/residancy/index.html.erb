@@ -1,0 +1,62 @@
+<section id="content">
+  <section class="vbox">
+    <section class="scrollable padder">
+      <ul class="breadcrumb no-border no-radius b-b b-light pull-in">
+        <li><a href="index.html"><i class="fa fa-home"></i> Residancies</a></li>
+        <li><a href="#">List</a></li>
+      </ul>
+      <ul>
+        <%= render 'partials/error_messages'%>
+      </ul>
+      <div class="m-b-md">
+        <h3 class="m-b-none">Residancies List</h3>
+      </div>
+      <section class="panel panel-default">
+        <header class="panel-heading">
+          Residancies
+          <i class="fa fa-info-sign text-muted" data-toggle="tooltip" data-placement="bottom" data-title="ajax to load the data."></i> 
+        </header>
+        <div class="table-responsive">
+          <table id="newsletter_list" class="display table-striped table-bordered" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Location</th>
+                    <th>Photo</th>
+                    <th>Actions</th>
+                    <th>Options</th>
+                </tr>
+            </thead> 
+            <tbody>
+              <% @data.each do |f|%>
+                <tr>
+                    <td><%=f.name%></td>
+                    <td><%=truncate(f.desc)%></td>
+                    <td><%=f.location%></td>
+                    <td><img src=<%=f.cover_pic.url(:thumb)%>></td>                      
+                    <td>
+                      <span >
+                        <a href=<%= edit_admin_residancy_path(f.id)%> ><i data-toggle="tooltip" data-placement="top" title = "Edit" class="fa fa-pencil icon-muted fa-fw m-r-xs"></i></a>
+                        <a href= <%=admin_residancy_path(f.id)%> ><i data-toggle="tooltip" data-placement="top" title = "View" class="fa fa-eye icon-muted fa-fw m-r-xs"></i></a>
+                        <a href= <%=admin_residancy_path(f.id)%> data-method="delete"><i data-toggle="tooltip" data-placement="top" title = "Remove" class="fa fa-times icon-muted fa-fw"></i></a> 
+                      </span>
+                    </td>
+                    <td>
+                      <span >
+                        <a style="margin-top:5px;"href="/admin/residancy/new_work_to_residancy/<%=f.id%>" class="btn btn-s-sm btn-info btn-rounded">Add Work</a>  
+                      </span>
+                       <span>
+                        <a style="margin-top:5px;" href="/admin/residancy/show_work_of_residancy/<%=f.id%>" class="btn btn-s-sm btn-info btn-rounded">View Work</a> 
+                      </span>                      
+                    </td>
+                </tr>
+              <%end%>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+  </section>
+  <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen" data-target="#nav"></a>
+</section>

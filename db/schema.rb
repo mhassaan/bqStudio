@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150817145103) do
+ActiveRecord::Schema.define(version: 20150818130920) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  limit: 255, default: "", null: false
@@ -88,6 +88,18 @@ ActiveRecord::Schema.define(version: 20150817145103) do
   end
 
   add_index "pictures", ["imageable_id"], name: "index_pictures_on_imageable_id", using: :btree
+
+  create_table "residancies", force: :cascade do |t|
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
+    t.string   "name",                   limit: 255
+    t.text     "desc",                   limit: 65535
+    t.string   "location",               limit: 255
+    t.string   "cover_pic_file_name",    limit: 255
+    t.string   "cover_pic_content_type", limit: 255
+    t.integer  "cover_pic_file_size",    limit: 4
+    t.datetime "cover_pic_updated_at"
+  end
 
   create_table "visits", force: :cascade do |t|
     t.datetime "created_at",                           null: false
