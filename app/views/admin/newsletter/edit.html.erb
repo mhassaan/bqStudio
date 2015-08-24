@@ -19,21 +19,21 @@
             <div class="form-group">
               <label class="col-sm-2 control-label">Name/Title</label>
               <div class="col-sm-6">
-                <%= f.text_field :title, :class => 'form-control', :required => true, :autocomplete => "off"  %>
+                <%= f.text_field :title, :class => 'form-control',:autocomplete => "off"  %>
               </div>
             </div>
             <div class="line line-dashed line-lg pull-in"></div>
             <div class="form-group">
               <label class="col-sm-2 control-label">Publish Date</label>
               <div class="col-sm-8">
-                <%= f.text_field :publisher_date, :class => 'new_newsletter input-s input-sm form-control','size'=>'16', :required => true, :autocomplete => "off"  %>
+                <%= f.text_field :publisher_date, :class => 'new_newsletter input-s input-sm form-control','size'=>'16',:autocomplete => "off"  %>
               </div>
             </div>
             <div class="line line-dashed line-lg pull-in"></div>
             <div class="form-group">
               <label class="col-sm-2 control-label">Summary</label>
               <div class="col-sm-6">
-                <%= f.text_area :summary, :class => 'form-control parsley-validated', :required => true, :autocomplete => "off" ,rows: "6" %>
+                <%= f.text_area :summary, :class => 'form-control parsley-validated',:autocomplete => "off" ,rows: "6" %>
               </div>
             </div>
             <div class="line line-dashed line-lg pull-in"></div>
@@ -41,7 +41,7 @@
               <label class="col-sm-2 control-label">Cover </label>
               <div class="col-sm-6">
                 <img src=<%=@data.cover_pic.url(:thumb)%>/>
-                <%= f.file_field :cover_pic, :class => 'file ', :required => true, :autocomplete => "off"  %>
+                <%= f.file_field :cover_pic, :class => 'file ',:autocomplete => "off"  %>
               </div>
             </div>
             <div class="form-group">

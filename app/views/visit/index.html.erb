@@ -18,10 +18,9 @@
             <div id="isotope-single" class="isotope thight margin">
                 <% @data.each do |visit|%>
                     <div class="item col-4">
-                        <a data-lightbox="portfolio[group]" href="<%=visit.cover_pic%>">
+                        <a>
                             <div class="isotope-info">
                                 <img class="img-responsive" src="<%=visit.cover_pic.url(:medium)%>" alt=""/>
-                                <div class="hover-info"><div class="infobox-3"></div></div>
                          	</div>
                         </a>
                         <h4><a href='<%=visit_path(visit.id)%>'><%=visit.name%></a></h4>

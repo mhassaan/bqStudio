@@ -18,11 +18,10 @@
             <div id="isotope-single" class="isotope thight margin">
                 <% @data.each do |news|%>
                     <div class="item col-4">
-                        <a data-lightbox="portfolio[group]" href="<%=news.cover_pic%>">
+                        <a >
                             <div class="isotope-info">
                                 <img class="img-responsive" src="<%=news.cover_pic.url(:medium)%>" alt=""/>
-                                <div class="hover-info"><div class="infobox-3"></div></div>
-                                </div>
+                            </div>
                         </a>
                         <h4><a href='<%=newsletter_path(news.id)%>'><%=news.title%></a></h4>
                         <p><a href='<%=newsletter_path(news.id)%>'><%=truncate(news.summary)%></a></p> 

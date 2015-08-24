@@ -19,14 +19,14 @@
             <div class="form-group">
               <label class="col-sm-2 control-label">Name/Title</label>
               <div class="col-sm-6">
-                <%= f.text_field :name, :class => 'form-control', :required => true, :autocomplete => "off"  %>
+                <%= f.text_field :name, :class => 'form-control',:autocomplete => "off"  %>
               </div>
             </div>
             <div class="line line-dashed line-lg pull-in"></div>
             <div class="form-group">
               <label class="col-sm-2 control-label">Work Details</label>
               <div class="col-sm-6">
-                <%= f.text_area :work_desc, :class => 'form-control parsley-validated', :required => true, :autocomplete => "off" ,rows: "6" %>
+                <%= f.text_area :work_desc, :class => 'form-control parsley-validated',:autocomplete => "off" ,rows: "6" %>
               </div>
             </div>
             <div class="line line-dashed line-lg pull-in"></div>
@@ -39,7 +39,7 @@
             <div class="form-group">
               <label class="col-sm-2 control-label"> </label>
               <div class="col-sm-6">
-                <%= f.file_field :cover_pic, :class => 'file ', :required => true, :autocomplete => "off"  %>
+                <%= f.file_field :cover_pic, :class => 'file ',:autocomplete => "off"  %>
               </div>
             </div>
             <div class="form-group">
