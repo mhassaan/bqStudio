@@ -5,11 +5,11 @@
         <div class="container">
             <div class="callout-box-1">
                 <div class="box-text">
-                    <h3>Visit Work</h3>
+                    <h3>Visit Gallery</h3>
                 </div>
-                <div class="box-text-2">
+                <!-- <div class="box-text-2">
                     <output>Home/Visit</output>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -18,7 +18,7 @@
             <div id="isotope-single" class="isotope thight margin">
                 <% @data.each do |visit|%>
                     <div class="item col-4">
-                        <a>
+                        <a href='<%=visit_path(visit.id)%>'>
                             <div class="isotope-info">
                                 <img class="img-responsive" src="<%=visit.cover_pic.url(:medium)%>" alt=""/>
                          	</div>

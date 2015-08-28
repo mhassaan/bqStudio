@@ -7,9 +7,9 @@
                 <div class="box-text">
                     <h3>Workshop Gallery</h3>
                 </div>
-                <div class="box-text-2">
+               <!--  <div class="box-text-2">
                     <output>Home/Workshop</output>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -18,7 +18,7 @@
             <div id="isotope-single" class="isotope thight margin">
                 <% @data.each do|work|%> 
                     <div class="item col-4">
-                        <a >
+                        <a href='<%=workshop_path(work.id)%>'>
                             <div class="isotope-info">
                                 <img class="img-responsive" src="<%=work.cover_pic.url(:medium)%>" alt=""/>
                             </div>
