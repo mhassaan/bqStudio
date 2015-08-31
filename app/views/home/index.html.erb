@@ -21,7 +21,7 @@
             height: 500px; overflow: hidden;">
             <% @banner.each do |f|%>
                 <div>
-                    <img u="image" src="<%=f.avatar.url(:medium)%>" />
+                    <img u="image" src="<%=f.avatar.url(:natural)%>" />
                 </div>
             <%end%>
         </div>
@@ -206,7 +206,7 @@
                 <div class="item col-4">
                     <a data-lightbox="portfolio[group]" href="<%=f.cover_pic%>">
                         <div class="isotope-info">
-                            <img class="img-responsive" src="<%=f.cover_pic.url(:medium)%>" alt=""/>
+                            <img class="img-responsive" src="<%=f.cover_pic.url(:natural)%>" alt=""/>
                             <div class="hover-info"><div class="infobox-3"></div></div>
                      </div>
                     </a>   
