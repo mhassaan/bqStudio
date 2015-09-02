@@ -64,7 +64,7 @@
                     <div class="comment small blog no-border">
                         <div class="infobox-2">
                             <h6><a href="/newsletter/article_detail/<%=article.id%>"><%=article.title%></a></h6>
-                            <span><%=article.created_at.strftime('%d-%m-%Y')%> / <a href="#"><%=article.author%></a></span>
+                            <span><a href="#">By <%=article.author%></a></span>
                         </div>
                         <img src="<%=article.avatar.url(:natural)%>" alt=""/>
                     </div>

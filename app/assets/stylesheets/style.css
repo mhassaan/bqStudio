@@ -1,3 +1,7 @@
+.widget a>i:hover{
+    color: black;
+    background-color: #ffc20e;
+}
 .tb {
     display: table;
     width: 100%;
@@ -55,7 +59,6 @@ i {
 .toggle-1-button:hover,
 .verticalblock a:hover,
 .widget h6 a:hover,
-.widget a>i:hover,
 #search-container .xbutton:hover,
 a:hover>.cart output,
 #main-menu-4.main-menu a:hover>.cart i,
@@ -764,7 +767,7 @@ li:hover>.sub-menu {
 #parallax-callout-box {
     padding-top: 45px;
     padding-bottom: 45px;
-    background: url('/assets/calloutparallax.jpg') 50% 0 no-repeat fixed transparent;
+    background: url('/assets/basepic2.png') 50% 0 no-repeat fixed transparent;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -834,7 +837,7 @@ li:hover>.sub-menu {
     background-size: cover
 }
 #parallax-demo1 {
-    background: url('/assets/parallax.jpg') 50% 0 no-repeat fixed transparent;
+    background: url('/assets/basepic1.png') 50% 0 no-repeat fixed transparent;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -2050,7 +2053,7 @@ header .full-width {
 }
 .widget i {
     color: #262626;
-    background-color: #ffc20e;
+    background-color: white;
     border-radius: 17.5px;
     height: 35px;
     width: 35px;
