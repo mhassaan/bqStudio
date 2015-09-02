@@ -851,7 +851,7 @@ li:hover>.sub-menu {
 .section-bar-1 {
     padding-top: 50px;
     padding-bottom: 60px;
-    background-color: #f1f0f0 !important
+    background-color: #ffc20e !important
 }
 .section-bar-2 {
     padding-top: 50px;
@@ -986,7 +986,7 @@ callout-box-5 {
     width: 100%
 }
 .callout-box-1 {
-    background-color: #f1f0f0
+    background-color: #ffc20e
 }
 .callout-box-2 {
     background-color: #343434
@@ -1036,7 +1036,7 @@ callout-box-5 {
 .callout-box-1 h3,
 .text-left-1 h3 {
     margin-top: 10px;
-    color: #262626
+    color: white
 }
 .callout-box-2 a:hover,
 .callout-box-3 a:hover,
@@ -4689,5 +4689,8 @@ a[href^="http://maps.google.com/maps"] {
     .container-fluid .col-xs-6 {
         width: 100%
     }
+}
+.bg{
+    background-color:#f1f0f0 !important;
 }
 /*# sourceMappingURL=style.css.map */
