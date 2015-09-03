@@ -242,10 +242,10 @@
                 //height change
                 jQuery( window ).on('scroll',function(){
                     if((jQuery(this).scrollTop()>=jQuery('.main-menu').offset().top||jQuery('body').css('top').replace('px', '')<0)&&jQuery(this).scrollTop()!=0){
-                        jQuery('.menu-center').css('height', '78px');
-                        jQuery('.menu-center').css('min-height', '78px');
-                        jQuery('.main-menu .navbar-right .nav > li > a').css('height', '78px');
-                        jQuery('.main-menu .navbar-right .nav > li > a').css('line-height', '78px');
+                        jQuery('.menu-center').css('height', '98px');
+                        jQuery('.menu-center').css('min-height', '98px');
+                        jQuery('.main-menu .navbar-right .nav > li > a').css('height', '98px');
+                        jQuery('.main-menu .navbar-right .nav > li > a').css('line-height', '98px');
                         jQuery('#main-menu-2.main-menu').css('background-color', '#ffffff');
                     }
                     else
