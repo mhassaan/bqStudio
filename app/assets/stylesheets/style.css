@@ -8,6 +8,9 @@
     height: 100%;
     position: relative
 }
+.nl-active{
+    color:#f65c2c;
+}
 .tb-cell {
     display: table-cell;
     text-align: center;
@@ -358,9 +361,10 @@ blockquote:before {
     width: 100%;
     overflow: visible !important
 }
+
 .main-menu a {
     text-decoration: none;
-    font-weight: bold;
+    /*font-weight: bold;*/
     border-radius: 0;
     padding: 0
 }
@@ -3179,7 +3183,7 @@ div.blog>h6 {
     font-size: 18px
 }
 .comment h6 a {
-    color: #262626
+    color: #f65c2c
 }
 .news output {
     font-weight: 300;
@@ -4692,5 +4696,29 @@ a[href^="http://maps.google.com/maps"] {
 }
 .bg{
     background-color:#f1f0f0 !important;
+}
+
+.newsletter-clr{
+    background-color: #f65c2c !important;
+}
+.newsletter-title-color{
+    color:#f65c2c !important;
+}
+
+.newsletter-title-color a:hover{
+    color:#ffc20e!important;
+}
+
+.newsletter-desc-color{
+    color:#f65c2c !important;
+}
+.newsletter-desc-color a:hover{
+    color:#ffc20e!important;
+}
+.comment a {
+    color:#f65c2c;
+}
+.header-spacing {
+    letter-spacing: 2pt !important;
 }
 /*# sourceMappingURL=style.css.map */

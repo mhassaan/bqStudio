@@ -3,14 +3,11 @@
 <%=render 'partials/front_header'%>
 <!-- ========= END ========= -->
 <!-- ========= CALLOUT BOX LIGHT ======== -->
-<section class="section-bar-1">
+<section class="section-bar-1 newsletter-clr">
     <div class="container">
-        <div class="callout-box-1">
+        <div class="callout-box-1 newsletter-clr">
             <div class="box-text">
-                <h3>Article Detail</h3>
-            </div>
-            <div class="box-text-2">
-                <output>Article/Detail</output>
+                <h3><%=@data.title%></h3>
             </div>
         </div>
     </div>
@@ -29,13 +26,13 @@
             <div class="col-lg-3 col-sm-3 col-xs-12">
                 <div class="infobox-4">
                     <div class="infobox-text-2">
-                        <h6>DESCRIPTION</h6>
+                        <h6  class="newsletter-title-color">DESCRIPTION</h6>
                         <p><%=@data.title%><br/>
                            Author: <%=@data.author%><br/>
                         </p>
                     </div>
                     <div class="infobox-text-2">
-                        <h6>DETAILS</h6>
+                        <h6  class="newsletter-title-color">DETAILS</h6>
                         <p><%=@data.description%></p>
                     </div>
                 </div>
@@ -50,7 +47,7 @@
         <div class="row">
             <div class="col-lg-8 col-sm-8 col-xs-12">
                 <div class="infobox-2">
-                    <h4>Description</h4>
+                    <h4 class="newsletter-title-color">Description</h4>
                     <p><%=@data.description%></p>
                 </div>
             </div>

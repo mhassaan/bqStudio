@@ -1,13 +1,10 @@
 <div id="wrapper-1">
 <%=render 'partials/front_header'%>
-<section class="section-bar-1">
+<section class="section-bar-1 newsletter-clr">
     <div class="container">
-        <div class="callout-box-1">
+        <div class="callout-box-1 newsletter-clr">
             <div class="box-text">
-                <h3>Portfolio Single</h3>
-            </div>
-            <div class="box-text-2">
-                <output>Newsletter/Portfolio</output>
+                <h3><%=@data.publisher_date.strftime('%B,%Y')%></h3>
             </div>
         </div>
     </div>
@@ -26,13 +23,13 @@
             <div class="col-lg-3 col-sm-3 col-xs-12">
                 <div class="infobox-4">
                     <div class="infobox-text-2">
-                        <h6>DESCRIPTION</h6>
+                        <h6 class="newsletter-title-color">DESCRIPTION</h6>
                         <p><%=@data.title%><br/>
                             Date: <%=@data.publisher_date.strftime('%d-%m-%Y')%><br/>
                         </p>
                     </div>
                     <div class="infobox-text-2">
-                        <h6>DETAILS</h6>
+                        <h6 class="newsletter-title-color">DETAILS</h6>
                         <p><%=@data.summary%></p>
                     </div>
                 </div>
@@ -63,8 +60,8 @@
                 <div class="col-lg-6 col-sm-6 col-xs-12">
                     <div class="comment small blog no-border">
                         <div class="infobox-2">
-                            <h6><a href="/newsletter/article_detail/<%=article.id%>"><%=article.title%></a></h6>
-                            <span><a href="#">By <%=article.author%></a></span>
+                            <h6 ><a href="/newsletter/article_detail/<%=article.id%>"><%=article.title%></a></h6>
+                            <span ><a href="#" style="color:#959595!important;">By <%=article.author%></a></span>
                         </div>
                         <img src="<%=article.avatar.url(:natural)%>" alt=""/>
                     </div>

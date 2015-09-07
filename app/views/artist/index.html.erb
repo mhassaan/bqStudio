@@ -23,7 +23,7 @@
                                 <img class="img-responsive" src="<%=artist.cover_pic.url(:natural)%>" alt=""/>
                             </div>
                         </a>
-                        <h4><a href='<%=artist_path(artist.id)%>'><%=artist.name%></a></h4>
+                        <h4 class="heading-color"><a href='<%=artist_path(artist.id)%>'><%=artist.name%></a></h4>
                         <p><a  href='<%=artist_path(artist.id)%>'><%=truncate(artist.work_desc)%></a></p> 
                     </div>
                 <%end%>

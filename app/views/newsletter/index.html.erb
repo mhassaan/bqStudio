@@ -1,9 +1,9 @@
 <div data-no-turbolink id="wrapper-1">
             <!-- ========= HEADER ========= -->
     <%=render 'partials/front_header'%>
-    <section class="section-bar-1">
+    <section class="section-bar-1 newsletter-clr" >
         <div class="container">
-            <div class="callout-box-1">
+            <div class="callout-box-1 newsletter-clr" >
                 <div class="box-text">
                     <h3>NEWSLETTER GALLERY</h3>
                 </div>
@@ -23,8 +23,8 @@
                                 <img class="img-responsive" src="<%=news.cover_pic.url(:natural)%>" alt=""/>
                             </div>
                         </a>
-                        <h4><a href='<%=newsletter_path(news.id)%>'><%=news.title%></a></h4>
-                        <p><a href='<%=newsletter_path(news.id)%>'><%=truncate(news.summary)%></a></p> 
+                        <h4 class="newsletter-title-color"><a href='<%=newsletter_path(news.id)%>'><%=news.title%></a></h4>
+                        <p ><a class="nl" href='<%=newsletter_path(news.id)%>'><%=truncate(news.summary)%></a></p> 
                     </div>
                 <%end%>
             </div>
