@@ -101,7 +101,7 @@ class Admin::ArtistController < ApplicationController
 
 	protected
 		def artist_params
-			params.require(:artist).permit(:name,:work_desc,:cover_pic)
+			params.require(:artist).permit(:name,:work_desc,:cover_pic,:intro)
 		end
 
 		def avatar_update_params

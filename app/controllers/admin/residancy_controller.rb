@@ -102,7 +102,7 @@ class Admin::ResidancyController < ApplicationController
 
   protected
   	def residancy_params
-  		params.require(:residancy).permit(:name,:location,:desc,:cover_pic)
+  		params.require(:residancy).permit(:name,:location,:desc,:cover_pic,:intro)
   	end
 
   	def avatar_update_params

@@ -28,11 +28,12 @@
                     <div class="infobox-text-2">
                         <h6>LOCATION</h6>
                         <p><%=@data.location%><br/>
+                        Date: <%=@data.created_at.strftime('%d-%m-%Y')%><br/>
                         </p>
                     </div>
                     <div class="infobox-text-2">
-                        <h6>DATE</h6>
-                        <p><%=@data.created_at.strftime('%d-%m-%Y')%></p>
+                        <h6>INTRO</h6>
+                        <p><%=truncate(@data.intro, length: 300)%></p>
                     </div>
                 </div>
             </div>

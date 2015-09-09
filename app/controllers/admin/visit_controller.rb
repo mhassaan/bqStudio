@@ -100,7 +100,7 @@ class Admin::VisitController < ApplicationController
 
 	protected
 		def visit_params
-			params.require(:visit).permit(:name,:location,:desc,:cover_pic)
+			params.require(:visit).permit(:name,:location,:desc,:cover_pic,:intro)
 		end
 
 		def avatar_update_params

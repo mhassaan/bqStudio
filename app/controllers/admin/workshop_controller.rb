@@ -101,7 +101,7 @@ class Admin::WorkshopController < ApplicationController
 
 	protected
 		def workshop_params
-			params.require(:workshop).permit(:name,:location,:desc,:cover_pic)
+			params.require(:workshop).permit(:name,:location,:desc,:cover_pic,:intro)
 		end
 
 		def avatar_update_params

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150828175510) do
+ActiveRecord::Schema.define(version: 20150909164128) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  limit: 255, default: "", null: false
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 20150828175510) do
     t.string   "avatar_content_type", limit: 255
     t.integer  "avatar_file_size",    limit: 4
     t.datetime "avatar_updated_at"
+    t.string   "intro",               limit: 255
   end
 
   create_table "artists", force: :cascade do |t|
@@ -53,6 +54,7 @@ ActiveRecord::Schema.define(version: 20150828175510) do
     t.string   "cover_pic_content_type", limit: 255
     t.integer  "cover_pic_file_size",    limit: 4
     t.datetime "cover_pic_updated_at"
+    t.string   "intro",                  limit: 255
   end
 
   create_table "banners", force: :cascade do |t|
@@ -63,6 +65,19 @@ ActiveRecord::Schema.define(version: 20150828175510) do
     t.integer  "avatar_file_size",    limit: 4
     t.datetime "avatar_updated_at"
   end
+
+  create_table "friendly_id_slugs", force: :cascade do |t|
+    t.string   "slug",           limit: 255, null: false
+    t.integer  "sluggable_id",   limit: 4,   null: false
+    t.string   "sluggable_type", limit: 50
+    t.string   "scope",          limit: 255
+    t.datetime "created_at"
+  end
+
+  add_index "friendly_id_slugs", ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true, using: :btree
+  add_index "friendly_id_slugs", ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type", using: :btree
+  add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id", using: :btree
+  add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type", using: :btree
 
   create_table "newsletters", force: :cascade do |t|
     t.datetime "created_at",                           null: false
@@ -99,6 +114,7 @@ ActiveRecord::Schema.define(version: 20150828175510) do
     t.string   "cover_pic_content_type", limit: 255
     t.integer  "cover_pic_file_size",    limit: 4
     t.datetime "cover_pic_updated_at"
+    t.string   "intro",                  limit: 255
   end
 
   create_table "visits", force: :cascade do |t|
@@ -111,6 +127,7 @@ ActiveRecord::Schema.define(version: 20150828175510) do
     t.string   "cover_pic_content_type", limit: 255
     t.integer  "cover_pic_file_size",    limit: 4
     t.datetime "cover_pic_updated_at"
+    t.string   "intro",                  limit: 255
   end
 
   create_table "workshops", force: :cascade do |t|
@@ -123,6 +140,7 @@ ActiveRecord::Schema.define(version: 20150828175510) do
     t.string   "cover_pic_content_type", limit: 255
     t.integer  "cover_pic_file_size",    limit: 4
     t.datetime "cover_pic_updated_at"
+    t.string   "intro",                  limit: 255
   end
 
 end

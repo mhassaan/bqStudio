@@ -106,7 +106,8 @@ class Admin::NewsletterController < ApplicationController
   def add_articles_to_newsletter
   	@data = Newsletter.find params[:letter_id]
   	@article = @data.articles.create(avatar:params[:newsletter][:article][:avatar],title: params[:newsletter][:article][:title],
-  																	 author: params[:newsletter][:article][:author],description: params[:newsletter][:article][:description] )
+  																	 author: params[:newsletter][:article][:author],description: params[:newsletter][:article][:description],
+                                     intro: params[:newsletter][:article][:intro])
 
   	if @article.save
   		flash[:success] = "Article added to newsletter successfully. Want to add more?"
@@ -160,6 +161,6 @@ class Admin::NewsletterController < ApplicationController
     end 
 
     def article_update_params
-      params.require(:article).permit(:avatar,:author,:title,:description)
+      params.require(:article).permit(:avatar,:author,:title,:description,:intro)
     end
 end
