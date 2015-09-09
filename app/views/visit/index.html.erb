@@ -24,20 +24,19 @@
                          	</div>
                         </a>
                         <h4 class="heading-color" ><a href='<%=visit_path(visit.id)%>'><%=visit.name%></a></h4>
-                        <p><a href='<%=visit_path(visit.id)%>'><%=visit.location%></a></p> 
+                        <p><a href='<%=visit_path(visit.id)%>'><%=visit.location%></a></p>
                     </div>
                 <%end%>
-            </div>            
+            </div>
         </div>
         <div class="container">
              <div class="digg_pagination"><%= will_paginate @data%></div>
         </div>
     </section>
-   
-        
-   
+
+
+
     <%=render 'partials/front_footer'%>
     <a class="scroll-top" href="#"><i class="fa fa-angle-up"></i></a>
             <!-- ========= END ========= -->
 </div>
-        

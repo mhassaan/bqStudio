@@ -4721,4 +4721,7 @@ a[href^="http://maps.google.com/maps"] {
 .header-spacing {
     letter-spacing: 2pt !important;
 }
+.heading-color{
+  color: #ffc20e !important;
+}
 /*# sourceMappingURL=style.css.map */
