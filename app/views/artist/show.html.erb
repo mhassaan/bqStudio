@@ -28,7 +28,7 @@
                     <div class="infobox-text-2">
                         <h6>TITLE</h6>
                         <p><%=@data.name%><br/>
-                           Date: <%=@data.publishing_date.strftime('%d-%m-%Y')%><br/>
+                           Date: <%=@data.publishing_date.strftime('%d-%m-%Y') if @data.publishing_date.present?%><br/>
                         </p>
                     </div>
                     <div class="infobox-text-2">
