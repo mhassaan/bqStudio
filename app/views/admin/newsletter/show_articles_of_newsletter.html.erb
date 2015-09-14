@@ -23,6 +23,7 @@
                 <tr>
                     <th>Article/Title</th>
                     <th>Author</th>
+                    <th>Intro</th>
                     <th>Description</th>
                     <th>Picture</th>
                     <th>Actions</th>
@@ -33,6 +34,7 @@
                 <tr>
                     <td><%=f.title if f.title.present?%></td>
                     <td><%=f.author%></td>
+                    <td><%=f.intro%></td>
                     <td><%=f.description%></td>
                     <td><img src=<%=f.avatar.url(:thumb)%>></td>                      
                     <td>
