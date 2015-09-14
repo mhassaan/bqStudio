@@ -28,7 +28,7 @@ class Admin::VisitController < ApplicationController
 	end
 
 	def update
-    @data = Visit.find params[:id]    
+    @data = Visit.find params[:id]
     if @data.update_attributes(visit_params)
     	flash[:success] = "Visit updated successfully."
     	redirect_to admin_visit_index_path
@@ -100,10 +100,10 @@ class Admin::VisitController < ApplicationController
 
 	protected
 		def visit_params
-			params.require(:visit).permit(:name,:location,:desc,:cover_pic)
+			params.require(:visit).permit(:name,:location,:desc,:cover_pic,:publishing_date)
 		end
 
 		def avatar_update_params
     	params.require(:picture).permit(:avatar)
-    end 
+    end
 end

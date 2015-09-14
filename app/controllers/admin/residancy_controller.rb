@@ -1,7 +1,7 @@
 class Admin::ResidancyController < ApplicationController
-	
+
 	layout 'admin'
-	
+
 	def index
 		@data = Residancy.all
 	end
@@ -30,7 +30,7 @@ class Admin::ResidancyController < ApplicationController
 	end
 
 	def update
-    @data = Residancy.find params[:id]    
+    @data = Residancy.find params[:id]
     if @data.update_attributes(residancy_params)
     	flash[:success] = "Residancy updated successfully."
     	redirect_to admin_residancy_index_path
@@ -102,10 +102,10 @@ class Admin::ResidancyController < ApplicationController
 
   protected
   	def residancy_params
-  		params.require(:residancy).permit(:name,:location,:desc,:cover_pic)
+  		params.require(:residancy).permit(:name,:location,:desc,:cover_pic,:publishing_date)
   	end
 
   	def avatar_update_params
     	params.require(:picture).permit(:avatar)
-    end 
+    end
 end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150828175510) do
+ActiveRecord::Schema.define(version: 20150914134149) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  limit: 255, default: "", null: false
@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 20150828175510) do
     t.string   "cover_pic_content_type", limit: 255
     t.integer  "cover_pic_file_size",    limit: 4
     t.datetime "cover_pic_updated_at"
+    t.date     "publishing_date"
   end
 
   create_table "banners", force: :cascade do |t|
@@ -99,6 +100,7 @@ ActiveRecord::Schema.define(version: 20150828175510) do
     t.string   "cover_pic_content_type", limit: 255
     t.integer  "cover_pic_file_size",    limit: 4
     t.datetime "cover_pic_updated_at"
+    t.date     "publishing_date"
   end
 
   create_table "visits", force: :cascade do |t|
@@ -111,6 +113,7 @@ ActiveRecord::Schema.define(version: 20150828175510) do
     t.string   "cover_pic_content_type", limit: 255
     t.integer  "cover_pic_file_size",    limit: 4
     t.datetime "cover_pic_updated_at"
+    t.date     "publishing_date"
   end
 
   create_table "workshops", force: :cascade do |t|
@@ -123,6 +126,7 @@ ActiveRecord::Schema.define(version: 20150828175510) do
     t.string   "cover_pic_content_type", limit: 255
     t.integer  "cover_pic_file_size",    limit: 4
     t.datetime "cover_pic_updated_at"
+    t.date     "publishing_date"
   end
 
 end

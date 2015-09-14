@@ -15,11 +15,18 @@
         </header>
         <div class="panel-body">
           <%= form_for @data , url: admin_visit_index_path , method: 'post', :html=>{class: 'form-horizontal'} do |f|%>
-           
+
             <div class="form-group">
               <label class="col-sm-2 control-label">Name/Title</label>
               <div class="col-sm-6">
                 <%= f.text_field :name, :class => 'form-control', :required => true, :autocomplete => "off"  %>
+              </div>
+            </div>
+            <div class="line line-dashed line-lg pull-in"></div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Publish Date</label>
+              <div class="col-sm-8">
+                <%= f.text_field :publishing_date, :class => 'new_visit input-s input-sm form-control','size'=>'16', :required => true, :autocomplete => "off"  %>
               </div>
             </div>
             <div class="line line-dashed line-lg pull-in"></div>

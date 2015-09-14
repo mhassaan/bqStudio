@@ -1,6 +1,6 @@
 class Admin::WorkshopController < ApplicationController
 	layout 'admin'
-	
+
 	def index
 		@data = Workshop.all
 	end
@@ -29,7 +29,7 @@ class Admin::WorkshopController < ApplicationController
 	end
 
 	def update
-    @data = Workshop.find params[:id]    
+    @data = Workshop.find params[:id]
     if @data.update_attributes(workshop_params)
     	flash[:success] = "Workshop updated successfully."
     	redirect_to admin_workshop_index_path
@@ -101,10 +101,10 @@ class Admin::WorkshopController < ApplicationController
 
 	protected
 		def workshop_params
-			params.require(:workshop).permit(:name,:location,:desc,:cover_pic)
+			params.require(:workshop).permit(:name,:location,:desc,:cover_pic,:publishing_date)
 		end
 
 		def avatar_update_params
     	params.require(:picture).permit(:avatar)
-    end 
+    end
 end

@@ -29,7 +29,7 @@ class Admin::ArtistController < ApplicationController
 	end
 
 	def update
-    @data = Artist.find params[:id]    
+    @data = Artist.find params[:id]
     if @data.update_attributes(artist_params)
     	flash[:success] = "Artist updated successfully."
     	redirect_to admin_artist_index_path
@@ -101,11 +101,11 @@ class Admin::ArtistController < ApplicationController
 
 	protected
 		def artist_params
-			params.require(:artist).permit(:name,:work_desc,:cover_pic)
+			params.require(:artist).permit(:name,:work_desc,:cover_pic,:publishing_date)
 		end
 
 		def avatar_update_params
     	params.require(:picture).permit(:avatar)
-    end 
+    end
 
 end
