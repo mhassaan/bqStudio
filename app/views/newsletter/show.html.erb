@@ -4,7 +4,7 @@
     <div class="container">
         <div class="callout-box-1 newsletter-clr">
             <div class="box-text">
-                <h3><%=@data.publisher_date.strftime('%B,%Y')%></h3>
+                <h3><%=@data.title%></h3>
             </div>
         </div>
     </div>
@@ -23,7 +23,7 @@
             <div class="col-lg-3 col-sm-3 col-xs-12">
                 <div class="infobox-4">
                     <div class="infobox-text-2">
-                        <h6 class="newsletter-title-color">TITLE</h6>
+                        <h6 class="newsletter-title-color">NEWSLETTER</h6>
                         <p><%=@data.title%><br/>
                             Date: <%=@data.publisher_date.strftime('%d-%m-%Y')%><br/>
                         </p>
@@ -63,7 +63,7 @@
                             <h6 ><a href="/newsletter/article_detail/<%=article.id%>"><%=article.title%></a></h6>
                             <span ><a href="#" style="color:#959595!important;">By <%=article.author%></a></span>
                         </div>
-                        <img src="<%=article.avatar.url(:natural)%>" alt=""/>
+                        <a data-no-turbolink  href="/newsletter/article_detail/<%=article.id%>"><img class="article-img" href="/newsletter/article_detail/<%=article.id%>" src="<%=article.avatar.url(:natural)%>" alt=""/>
                     </div>
                 </div>
             <%end%>

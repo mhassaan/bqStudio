@@ -4724,4 +4724,10 @@ a[href^="http://maps.google.com/maps"] {
 .heading-color{
   color: #ffc20e !important;
 }
+.article-img{
+    margin-top: 5px;
+    float: right;
+    width: 10%;
+    border-radius: 50%;
+}
 /*# sourceMappingURL=style.css.map */
