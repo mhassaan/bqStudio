@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150914134149) do
+ActiveRecord::Schema.define(version: 20150916183824) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  limit: 255, default: "", null: false
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 20150914134149) do
     t.string   "avatar_content_type", limit: 255
     t.integer  "avatar_file_size",    limit: 4
     t.datetime "avatar_updated_at"
-    t.string   "intro",               limit: 255
+    t.text     "intro",               limit: 65535
   end
 
   create_table "artists", force: :cascade do |t|
@@ -54,7 +54,7 @@ ActiveRecord::Schema.define(version: 20150914134149) do
     t.string   "cover_pic_content_type", limit: 255
     t.integer  "cover_pic_file_size",    limit: 4
     t.datetime "cover_pic_updated_at"
-    t.string   "intro",                  limit: 255
+    t.text     "intro",                  limit: 65535
     t.date     "publishing_date"
   end
 
@@ -115,7 +115,7 @@ ActiveRecord::Schema.define(version: 20150914134149) do
     t.string   "cover_pic_content_type", limit: 255
     t.integer  "cover_pic_file_size",    limit: 4
     t.datetime "cover_pic_updated_at"
-    t.string   "intro",                  limit: 255
+    t.text     "intro",                  limit: 65535
     t.date     "publishing_date"
   end
 
@@ -129,7 +129,7 @@ ActiveRecord::Schema.define(version: 20150914134149) do
     t.string   "cover_pic_content_type", limit: 255
     t.integer  "cover_pic_file_size",    limit: 4
     t.datetime "cover_pic_updated_at"
-    t.string   "intro",                  limit: 255
+    t.text     "intro",                  limit: 65535
     t.date     "publishing_date"
   end
 
@@ -143,7 +143,7 @@ ActiveRecord::Schema.define(version: 20150914134149) do
     t.string   "cover_pic_content_type", limit: 255
     t.integer  "cover_pic_file_size",    limit: 4
     t.datetime "cover_pic_updated_at"
-    t.string   "intro",                  limit: 255
+    t.text     "intro",                  limit: 65535
     t.date     "publishing_date"
   end
 
