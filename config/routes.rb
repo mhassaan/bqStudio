@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   devise_for :admins,controllers: { sessions: "admins/sessions"}
   devise_scope :admin do
     get "admins/sign_out" => "devise/sessions#destroy"
