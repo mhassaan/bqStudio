@@ -5,10 +5,23 @@
 <!-- ========= CALLOUT BOX LIGHT ======== -->
 <section class="section-bar-1 newsletter-clr">
     <div class="container">
-        <div class="callout-box-1 newsletter-clr">
-            <div class="box-text">
-                <h3><%=@data.title%></h3>
+        <div class="row">
+            <div class="col-sm-1">
+              <a data-no-turbolink class="" href="/newsletter/article_detail/<%=@data.previous%>"><i class="fa fa-angle-left fa-3x"></i></a>  
             </div>
+             <div class="col-sm-4">
+                <div class="callout-box-1 newsletter-clr">
+                    <div class="box-text">
+                        <h3><%=@data.title%></h3>
+                    </div>
+                </div>
+            </div>       
+            <div class="col-sm-3 col-sm-offset-2 ">
+                <a data-no-turbolink class="" href="/newsletter/article_detail/<%=@data.next%>"><i class="fa fa-angle-right fa-3x"></i></a>
+            </div> 
+            <div class="col-sm-2">
+                <a class="button-2 button-xsmall button-round newsletter-title-color" href="<%=newsletter_path(@data.newsletter.id)%>">BACK</a>
+            </div>  
         </div>
     </div>
 </section>
@@ -33,7 +46,7 @@
                     </div>
                     <div class="infobox-text-2">
                         <h6  class="newsletter-title-color">INTRO</h6>
-                        <p><%=truncate(@data.intro,length: 300)%></p>
+                        <p><%=truncate(raw(@data.intro),length: 300)%></p>
                     </div>
                 </div>
             </div>
@@ -48,7 +61,7 @@
             <div class="col-lg-8 col-sm-8 col-xs-12">
                 <div class="infobox-2">
                     <h4 class="newsletter-title-color">Description</h4>
-                    <p><%=@data.description%></p>
+                    <p><%= raw(@data.description)%></p>
                 </div>
             </div>
         </div>

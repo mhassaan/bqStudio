@@ -2,10 +2,20 @@
 <%=render 'partials/front_header'%>
 <section class="section-bar-1 newsletter-clr">
     <div class="container">
-        <div class="callout-box-1 newsletter-clr">
-            <div class="box-text">
-                <h3><%=@data.title%></h3>
+        <div class="row">
+            <div class="col-sm-1">
+              <a data-no-turbolink class="" href="<%=newsletter_path(@data.previous)%>"><i class="fa fa-angle-left fa-3x"></i></a>  
             </div>
+             <div class="col-sm-5">
+                <div class="callout-box-1 newsletter-clr">
+                    <div class="box-text">
+                        <h3><%=@data.title%></h3>
+                    </div>
+                </div>
+            </div>       
+            <div class="col-sm-3 col-sm-offset-2 ">
+                <a data-no-turbolink class="" href="<%=newsletter_path(@data.next)%>"><i class="fa fa-angle-right fa-3x"></i></a>
+            </div>   
         </div>
     </div>
 </section>
@@ -29,8 +39,8 @@
                         </p>
                     </div>
                     <div class="infobox-text-2">
-                        <h6 class="newsletter-title-color">INTRO</h6>
-                        <p><%=@data.summary%></p>
+                        <h6 class="newsletter-title-color">CONTENT</h6>
+                        <p><%= raw(@data.summary)%></p>
                     </div>
                 </div>
             </div>

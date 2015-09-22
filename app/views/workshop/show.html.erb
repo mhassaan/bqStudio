@@ -5,10 +5,20 @@
 <!-- ========= CALLOUT BOX LIGHT ======== -->
 <section class="section-bar-1">
     <div class="container">
-        <div class="callout-box-1">
-            <div class="box-text">
-                <h3><%=@data.name%></h3>
+        <div class="row">
+            <div class="col-sm-1">
+              <a data-no-turbolink class="" href="<%=workshop_path(@data.previous)%>"><i class="fa fa-angle-left fa-3x"></i></a>  
             </div>
+             <div class="col-sm-5">
+                <div class="callout-box-1">
+                    <div class="box-text">
+                        <h3><%=@data.name%></h3>
+                    </div>
+                </div>
+            </div>       
+            <div class="col-sm-3 col-sm-offset-2 ">
+                <a data-no-turbolink class="" href="<%=workshop_path(@data.next)%>"><i class="fa fa-angle-right fa-3x"></i></a>
+            </div>   
         </div>
     </div>
 </section>
@@ -33,7 +43,7 @@
                     </div>
                     <div class="infobox-text-2">
                         <h6>INTRO</h6>
-                        <p><%=truncate(@data.intro, length: 300)%></p>
+                        <p><%=truncate(raw(@data.intro), length: 300)%></p>
                     </div>
                 </div>
             </div>
@@ -64,7 +74,7 @@
             <div class="col-lg-8 col-sm-8 col-xs-12">
                 <div class="infobox-2">
                     <h4>Description</h4>
-                    <p><%=@data.desc%></p>
+                    <p><%=raw(@data.desc)%></p>
                 </div>
             </div>
         </div>

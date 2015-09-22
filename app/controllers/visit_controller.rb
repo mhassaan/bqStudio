@@ -7,8 +7,13 @@ class VisitController < ApplicationController
 	end
 
 	def show
-		@data = Visit.find params[:id]
-		@result = @data.pictures 
+		# begin
+		#   @data = Visit.find params[:id]
+		# rescue ActiveRecord::RecordNotFound => e
+		#   @data = nil
+		# end
+		@data=Visit.find(params[:id])
+		@result = @data.pictures
 	end
 	
 end

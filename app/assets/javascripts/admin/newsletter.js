@@ -4,4 +4,7 @@ $(document).on('ready page:load', function () {
     $('.new_newsletter').datepicker({
        format: 'dd/mm/yyyy'
     });
+    $('.ckeditor').ckeditor({
+  // optional config
+	});
 });
