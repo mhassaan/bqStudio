@@ -24,7 +24,7 @@
                             </div>
                         </a>
                         <h4 class="newsletter-title-color"><a href='<%=newsletter_path(news.id)%>'><%=news.title%></a></h4>
-                        <a class="nl" href='<%=newsletter_path(news.id)%>'><p><%=truncate(news.summary.html_safe)%></p></a> 
+                        <p ><%=truncate(news.summary.html_safe)%></p> 
                     </div>
                 <%end%>
             </div>
