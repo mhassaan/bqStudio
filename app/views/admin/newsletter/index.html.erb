@@ -32,7 +32,7 @@
               <% @data.each do |f|%>
                 <tr>
                     <td><%=f.title%></td>
-                    <td><%=truncate(f.summary)%></td>
+                    <td><%=truncate(strip_tags(f.summary).gsub("&#13;",""))%></td>
                     <td><img src=<%=f.cover_pic.url(:thumb)%>></td>                      
                     <td><%=f.publisher_date.strftime('%d-%m-%Y')%></td>
                     <td>

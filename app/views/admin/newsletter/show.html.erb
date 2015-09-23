@@ -32,7 +32,8 @@
             <div class="form-group">
               <label class="col-sm-2 control-label">Summary</label>
               <div class="col-sm-8">
-                <%= text_area_tag 'summary', @data.summary, {class: 'form-control parsley-validated',rows: "6"}%>
+                
+              <p><%=@data.summary.html_safe%></p>
                 <!-- <textarea value="<%=@data.summary%>" class="form-control" disabled=""> -->
               </div>
             </div>
