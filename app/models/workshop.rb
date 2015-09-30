@@ -10,7 +10,7 @@ class Workshop < ActiveRecord::Base
 
   def previous
     #self.where("id < ?", id).last
-  	Workshop.where("id < ?", id).order("id DESC").last || Workshop.last
+  	Workshop.where("id < ?", id).order("id DESC").first || Workshop.first
   end
 
 end

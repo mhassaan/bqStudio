@@ -11,7 +11,7 @@ class Newsletter < ActiveRecord::Base
 
   def previous
     #self.where("id < ?", id).last
-  	Newsletter.where("id < ?", id).order("id DESC").last || Newsletter.last	
+  	Newsletter.where("id < ?", id).order("id DESC").first || Newsletter.first	
   end
 
 end

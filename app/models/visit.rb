@@ -10,7 +10,7 @@ class Visit < ActiveRecord::Base
 
   def previous
     #self.where("id < ?", id).last
-  	Visit.where("id < ?", id).order("id DESC").last || Visit.last
+  	Visit.where("id < ?", id).order("id DESC").first || Visit.first
   end
 
 end

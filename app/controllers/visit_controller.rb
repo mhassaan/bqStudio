@@ -2,7 +2,7 @@ class VisitController < ApplicationController
 
 	def index
 		#@data= Visit.all.order('created_at DESC').paginate(:page => params[:page])
-		@data = Visit.paginate(:per_page => 9, :page => params[:page]).order('created_at DESC')
+		@data = Visit.paginate(:per_page => 12, :page => params[:page]).order('created_at DESC')
 		
 	end
 

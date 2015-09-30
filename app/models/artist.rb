@@ -9,6 +9,6 @@ class Artist < ActiveRecord::Base
 
   def previous
     #self.where("id < ?", id).last
-  	Artist.where("id < ?", id).order("id DESC").last || Artist.last
+  	Artist.where("id < ?", id).order("id DESC").first || Artist.first
   end
 end

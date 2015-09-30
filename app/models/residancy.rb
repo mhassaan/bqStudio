@@ -10,6 +10,6 @@ class Residancy < ActiveRecord::Base
 
   def previous
     #self.where("id < ?", id).last
-  	Residancy.where("id < ?", id).order("id DESC").last || Residancy.last
+  	Residancy.where("id < ?", id).order("id DESC").first || Residancy.first
   end
 end
