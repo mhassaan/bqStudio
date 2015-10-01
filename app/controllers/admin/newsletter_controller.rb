@@ -2,7 +2,7 @@ class Admin::NewsletterController < ApplicationController
   layout 'admin'
 
   def index
-    @data = Newsletter.all
+    @data = Newsletter.order('id DESC')  
   end
 
   def new

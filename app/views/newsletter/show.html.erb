@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-1">
-              <a data-no-turbolink class="" href="<%=newsletter_path(@data.previous)%>"><img class="" src="/assets/left_button" alt=""/></a>  
+              <a data-no-turbolink class="" href="<%=newsletter_path(@next)%>"><img class="" src="/assets/left_button" alt=""/></a>  
             </div>
              <div class="col-sm-10">
                 <div class="callout-box-1 newsletter-clr">
@@ -14,7 +14,7 @@
                 </div>
             </div>       
             <div class="col-sm-1">
-                <a data-no-turbolink class="" href="<%=newsletter_path(@data.next)%>"><img class="" src="/assets/right_button" alt=""/></a>
+                <a data-no-turbolink class="" href="<%=newsletter_path(@previous)%>"><img class="" src="/assets/right_button" alt=""/></a>
             </div>   
         </div>
     </div>

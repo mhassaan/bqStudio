@@ -5,11 +5,13 @@ class Newsletter < ActiveRecord::Base
   validates_attachment_content_type :cover_pic, :content_type => /\Aimage\/.*\Z/
 
   def next
-    Newsletter.where("title > ?", title).order("title asc").first || Newsletter.first
+    #self.where("id > ?", id).first
+    Newsletter.where("publisher_date > ?", publisher_date).order("publisher_date ").first || Newsletter.first
   end
 
   def previous
-  	Newsletter.where("title < ?", title).order("title desc").first || Newsletter.first	
+    #self.where("id < ?", id).last
+  	Newsletter.where("publisher_date < ?", publisher_date).order("publisher_date ").first || Newsletter.first	
   end
 
 end
