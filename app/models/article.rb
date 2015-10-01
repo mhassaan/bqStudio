@@ -9,7 +9,7 @@ class Article < ActiveRecord::Base
   end
 
   def previous
-  	@data = Article.where("id < ?", id).order("id ASC").last || Article.last
+  	@data = Article.where("id < ?", id).order("id DESC").first || Article.first
   	@data.id
   end
 end

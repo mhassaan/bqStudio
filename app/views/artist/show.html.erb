@@ -7,17 +7,17 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-1">
-              <a data-no-turbolink class="" href="<%=artist_path(@data.previous)%>"><i class="fa fa-angle-left fa-3x"></i></a>  
+              <a data-no-turbolink class="" href="<%=artist_path(@data.previous)%>"><img class="" src="/assets/left_button" alt=""/></a>  
             </div>
-             <div class="col-sm-5">
+             <div class="col-sm-10">
                 <div class="callout-box-1">
                     <div class="box-text">
                         <h3><%=@data.name%></h3>
                     </div>
                 </div>
             </div>       
-            <div class="col-sm-3 col-sm-offset-2 ">
-                <a data-no-turbolink class="" href="<%=artist_path(@data.next)%>"><i class="fa fa-angle-right fa-3x"></i></a>
+            <div class="col-sm-1 ">
+                <a data-no-turbolink class="" href="<%=artist_path(@data.next)%>"><img class="" src="/assets/right_button" alt=""/></a>
             </div>   
         </div>
     </div>
