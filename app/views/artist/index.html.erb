@@ -24,7 +24,7 @@
                             </div>
                         </a>
                         <h4 class="heading-color"><a href='<%=artist_path(artist.id)%>'><%=artist.name%></a></h4>
-                        <p><a  href='<%=artist_path(artist.id)%>'><%=truncate(artist.work_desc)%></a></p> 
+                        <p><a  href='<%=artist_path(artist.id)%>'><%=truncate(strip_tags(artist.intro).gsub("&#13;","")) if artist.intro.present?%></a></p> 
                     </div>
                 <%end%>
             </div>

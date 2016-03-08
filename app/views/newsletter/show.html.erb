@@ -2,13 +2,28 @@
 <%=render 'partials/front_header'%>
 <section class="section-bar-1 newsletter-clr">
     <div class="container">
-        <div class="callout-box-1 newsletter-clr">
-            <div class="box-text">
-                <h3><%=@data.publisher_date.strftime('%B,%Y')%></h3>
+        <div class="row">
+            <div class="col-sm-1">
+              <a data-no-turbolink class="" href="<%=newsletter_path(@next)%>"><img class="" src="/assets/left_button" alt=""/></a>  
             </div>
+             <div class="col-sm-10">
+                <div class="callout-box-1 newsletter-clr">
+                    <div class="box-text">
+                        <h3><%=@data.title%></h3>
+                    </div>
+                </div>
+            </div>       
+            <div class="col-sm-1">
+                <a data-no-turbolink class="" href="<%=newsletter_path(@previous)%>"><img class="" src="/assets/right_button" alt=""/></a>
+            </div>   
         </div>
     </div>
 </section>
+<div class="row" style= "background-color:white;padding-top:5px;">
+    <div class="col-sm-1 pull-right">
+        <a data-no-turbolink class="" href="<%=newsletter_index_path%>"><img class="" src="/assets/back_button" alt=""/></a>
+    </div>
+</div>
 <section class="section section-margin">
     <div class="container">
         <div class="row">
@@ -16,21 +31,21 @@
                 <a data-lightbox="single" href="<%=@data.cover_pic%>">
                     <div class="isotope-info">
                         <img class="img-responsive" src="<%=@data.cover_pic.url(:natural)%>" alt=""/>
-                        <div class="hover-info"><div class="infobox-3"></div></div>
+                        <div class=""><div class="infobox-3"></div></div>
                     </div>
                 </a>   
             </div>
             <div class="col-lg-3 col-sm-3 col-xs-12">
                 <div class="infobox-4">
                     <div class="infobox-text-2">
-                        <h6 class="newsletter-title-color">TITLE</h6>
+                        <h6 class="newsletter-title-color">NEWSLETTER</h6>
                         <p><%=@data.title%><br/>
                             Date: <%=@data.publisher_date.strftime('%d-%m-%Y')%><br/>
                         </p>
                     </div>
                     <div class="infobox-text-2">
-                        <h6 class="newsletter-title-color">INTRO</h6>
-                        <p><%=@data.summary%></p>
+                        <h6 class="newsletter-title-color">CONTENT</h6>
+                        <p><%= @data.summary.html_safe%></p>
                     </div>
                 </div>
             </div>
@@ -45,7 +60,7 @@
                     <a data-lightbox="portfolio[group]" href="<%=f.avatar%>">
                         <div class="isotope-info">
                             <img class="img-responsive" src="<%=f.avatar.url(:natural)%>" alt=""/>
-                            <div class="hover-info"><div class="infobox-3"></div></div>
+                            <div class=""><div class="infobox-3"></div></div>
                      </div>
                     </a>   
                 </div>
@@ -63,7 +78,7 @@
                             <h6 ><a href="/newsletter/article_detail/<%=article.id%>"><%=article.title%></a></h6>
                             <span ><a href="#" style="color:#959595!important;">By <%=article.author%></a></span>
                         </div>
-                        <img src="<%=article.avatar.url(:natural)%>" alt=""/>
+                        <a data-no-turbolink  href="/newsletter/article_detail/<%=article.id%>"><img class="article-img" href="/newsletter/article_detail/<%=article.id%>" src="<%=article.avatar.url(:natural)%>" alt=""/>
                     </div>
                 </div>
             <%end%>

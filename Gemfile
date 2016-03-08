@@ -34,6 +34,7 @@ gem 'thin'
 
 # Use Unicorn as the app server
 gem 'unicorn'
+gem 'ckeditor_rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

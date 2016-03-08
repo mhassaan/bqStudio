@@ -20,6 +20,7 @@
           <table id="newsletter_list" class="display table-striped table-bordered" cellspacing="0" width="100%">
             <thead>
                 <tr>
+                    <th>Id</th>
                     <th>Title</th>
                     <th>Summary</th>
                     <th>Cover</th>
@@ -31,8 +32,9 @@
             <tbody>
               <% @data.each do |f|%>
                 <tr>
+                    <td><%=f.id%></td>
                     <td><%=f.title%></td>
-                    <td><%=truncate(f.summary)%></td>
+                    <td><%=truncate(strip_tags(f.summary).gsub("&#13;",""))%></td>
                     <td><img src=<%=f.cover_pic.url(:thumb)%>></td>                      
                     <td><%=f.publisher_date.strftime('%d-%m-%Y')%></td>
                     <td>

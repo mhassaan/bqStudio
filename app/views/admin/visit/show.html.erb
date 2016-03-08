@@ -32,7 +32,7 @@
             <div class="form-group">
               <label class="col-sm-2 control-label">Publish Date</label>
               <div class="col-sm-8">
-                <input type="text" value="<%=@data.publishing_date.strftime('%d-%m-%y')%>" class="form-control" disabled="">
+                <input type="text" value="<%=@data.publishing_date.strftime('%d-%m-%y') if @data.publishing_date.present?%>" class="form-control" disabled="">
               </div>
             </div>
             <div class="line line-dashed line-lg pull-in"></div>

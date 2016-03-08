@@ -21,6 +21,7 @@
             <thead>
                 <tr>
                     <th>Name</th>
+                    <th>Intro</th>
                     <th>WorkDesc</th>
                     <th>Photo</th>
                     <th>Actions</th>
@@ -31,7 +32,8 @@
               <% @data.each do |f|%>
                 <tr>
                     <td><%=f.name%></td>
-                    <td><%=truncate(f.work_desc)%></td>
+                    <td><%=truncate(strip_tags(f.intro).gsub("&#13;","")) if f.intro.present?%></td>
+                    <td><%=truncate(strip_tags(f.work_desc).gsub("&#13;",""))%></td>
                     <td><img src=<%=f.cover_pic.url(:thumb)%>></td>                      
                     <td>
                       <span >

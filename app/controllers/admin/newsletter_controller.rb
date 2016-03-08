@@ -3,7 +3,7 @@ class Admin::NewsletterController < ApplicationController
   before_action :authenticate_admin!
 
   def index
-    @data = Newsletter.all
+    @data = Newsletter.order('id DESC')
   end
 
   def new
