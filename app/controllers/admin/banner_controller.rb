@@ -1,6 +1,7 @@
 class Admin::BannerController < ApplicationController
 	layout 'admin'
-	
+	before_action :authenticate_admin!
+
 	def index
 		@data = Banner.all
 	end
@@ -29,7 +30,7 @@ class Admin::BannerController < ApplicationController
 	end
 
 	def update
-    @data = Banner.find params[:id]    
+    @data = Banner.find params[:id]
     if @data.update_attributes(banner_params)
     	flash[:success] = "Banner updated successfully."
     	redirect_to admin_banner_index_path
@@ -50,7 +51,7 @@ class Admin::BannerController < ApplicationController
     end
   end
 
-  protected 
+  protected
   	def banner_params
   		params.require(:banner).permit(:avatar)
   	end

@@ -1,5 +1,6 @@
 class Admin::WorkshopController < ApplicationController
 	layout 'admin'
+	before_action :authenticate_admin!
 
 	def index
 		@data = Workshop.all

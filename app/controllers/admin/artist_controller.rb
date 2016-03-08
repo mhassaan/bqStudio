@@ -1,6 +1,7 @@
 class Admin::ArtistController < ApplicationController
 	layout 'admin'
-
+	before_action :authenticate_admin!
+	
 	def index
 		@data = Artist.all
 	end

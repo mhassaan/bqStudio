@@ -1,6 +1,7 @@
 class Admin::ResidancyController < ApplicationController
 
 	layout 'admin'
+	before_action :authenticate_admin!
 
 	def index
 		@data = Residancy.all

@@ -1,5 +1,6 @@
 class Admin::NewsletterController < ApplicationController
   layout 'admin'
+  before_action :authenticate_admin!
 
   def index
     @data = Newsletter.all
@@ -25,7 +26,7 @@ class Admin::NewsletterController < ApplicationController
   end
 
   def update
-    @data = Newsletter.find params[:id]    
+    @data = Newsletter.find params[:id]
     if @data.update_attributes(newsletter_params)
     	flash[:success] = "Newsletter updated successfully."
     	redirect_to admin_newsletter_index_path
@@ -34,7 +35,7 @@ class Admin::NewsletterController < ApplicationController
      	redirect_to new_admin_newsletter_path
     end
   end
-  
+
   def show
   	@data = Newsletter.find params[:id]
   end
@@ -158,7 +159,7 @@ class Admin::NewsletterController < ApplicationController
 
     def avatar_update_params
     	params.require(:picture).permit(:avatar)
-    end 
+    end
 
     def article_update_params
       params.require(:article).permit(:avatar,:author,:title,:description,:intro)
